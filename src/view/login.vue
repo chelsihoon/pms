@@ -66,7 +66,7 @@ img {
     display: block;
 }
 
-h1,
+#login h1,
 h2,
 h3,
 h4,
@@ -95,6 +95,7 @@ button {
   */
 
 /* 공통 */
+html,
 body {
     height: 100%;
 }

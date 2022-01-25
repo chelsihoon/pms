@@ -1,12 +1,10 @@
 import { createApp, h } from "vue";
 import login from "./view/login.vue";
-import dashboard from "./view/dash_board.vue";
-import cell from "./view/cell.vue";
+import dashBoard from "./view/dash_board.vue";
 
 const routes = {
     "/": login,
-    "/dashboard": dashboard,
-    "/cell": cell,
+    "/dashboard": dashBoard,
 };
 
 const SimpleRouter = {
