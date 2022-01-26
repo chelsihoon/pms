@@ -307,7 +307,6 @@ export default {
 #dash_board {
     background-color: #f4f7fc;
     display: block;
-    height: 100%;
 }
 #dash_board_cnt {
     display: flex;

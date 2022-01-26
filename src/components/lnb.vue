@@ -83,6 +83,7 @@ button {
 #lnbSet {
     width: 100%;
     background-color: #f4f7fc;
+    height: 48px;
 }
 .cursor {
     cursor: pointer;
@@ -101,7 +102,7 @@ button {
 }
 .lnb_wrap {
     width: 100%;
-    height: 48px;
+    height: 100%;
     position: relative;
     background: #fff;
     border-bottom: 1px solid #ddd;

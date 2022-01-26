@@ -7,8 +7,10 @@
                 /></a>
             </h1>
             <div class="depth_1">
-                <a href=""><h2 class="depth_1_titl selected_1">대시보드</h2></a>
-                <a href=""><h2 class="depth_1_titl">PCS</h2></a>
+                <a href="/dashboard"
+                    ><h2 class="depth_1_titl selected_1">대시보드</h2></a
+                >
+                <a href="/pcssituation"><h2 class="depth_1_titl">PCS</h2></a>
                 <a href=""><h2 class="depth_1_titl">Battery</h2></a>
                 <a href=""><h2 class="depth_1_titl">Rack,Module</h2></a>
                 <a href=""><h2 class="depth_1_titl">시스템 관리</h2></a>

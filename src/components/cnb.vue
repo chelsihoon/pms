@@ -1,6 +1,9 @@
 <template>
     <section id="cnbSet">
-        <div class="cnb_wrap wrap">
+        <div class="cnb_wrap wrap list_pcs">
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">PCS 현황</h3>
+            </div>
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 사용량</h3>
                 <nav class="cnb depth_3 list_pcs_used">
@@ -20,6 +23,9 @@
                 </nav>
             </div>
             <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">PCS 수동제어</h3>
+            </div>
+            <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 설정</h3>
                 <nav class="cnb depth_3 list_pcs_setting">
                     <a href=""><h4 class="depth_3_titl">PCS 설정</h4></a>
@@ -28,7 +34,45 @@
                 </nav>
             </div>
         </div>
-        <section id="contents"></section>
+        <div class="cnb_wrap wrap list_battery">
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Battery 현황</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Battery 운전이력</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Battery 수동제어</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Battery 설정</h3>
+            </div>
+        </div>
+        <div class="cnb_wrap wrap list_rack_module">
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Rack 현황</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">Rack, Module 설정</h3>
+            </div>
+        </div>
+        <div class="cnb_wrap wrap list_system">
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">기타 기기 수동 제어</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">데이터 다운로드</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">기타 기기 설정</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">관리자 관리</h3>
+            </div>
+            <div class="depth_3_wrap">
+                <h3 class="depth_2_titl">코드 관리</h3>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -73,7 +117,6 @@ button {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #444;
 }
 
 /*
@@ -88,6 +131,8 @@ button {
 #cnbSet {
     width: 100%;
     background-color: #f4f7fc;
+    position: relative;
+    height: 58px;
 }
 .cursor {
     cursor: pointer;
@@ -104,24 +149,29 @@ button {
     left: 0 !important;
     bottom: -1px !important;
 }
-.cnb_wrap {
+#cnbSet .cnb_wrap {
     width: 100%;
+    height: 100%;
     position: relative;
-    height: 58px;
     margin-top: 32px;
     border-bottom: 1px solid #ddd;
+    display: none;
 }
-.cnb_wrap .depth_3_wrap {
-    position: absolute;
+/* lnb 번호 지정 1 ~ 4 */
+#cnbSet .cnb_wrap:nth-child(0) {
+    display: flex;
+}
+#cnbSet .cnb_wrap .depth_3_wrap {
     margin-left: 32px;
     height: 100%;
     display: flex;
     display: none;
 }
-.cnb_wrap .depth_3_wrap:first-child {
+/* cnb 번호 지정 */
+#cnbSet .cnb_wrap .depth_3_wrap:nth-child(0) {
     display: flex;
 }
-.cnb_wrap .depth_3_wrap .depth_2_titl {
+#cnbSet .cnb_wrap .depth_3_wrap .depth_2_titl {
     display: flex;
     margin-right: 40px;
     line-height: 40px;
@@ -129,7 +179,7 @@ button {
     font-weight: 500;
     color: #313748;
 }
-.cnb_wrap .depth_3_wrap .depth_2_titl::before {
+#cnbSet .list_pcs .depth_3_wrap .depth_2_titl::before {
     content: "";
     background: url(../assets/img/icon_pcs.png) no-repeat center;
     width: 40px;
@@ -140,19 +190,52 @@ button {
     margin-right: 15px;
     display: block;
 }
-.cnb_wrap .depth_3_wrap .depth_3 {
+#cnbSet .list_battery .depth_3_wrap .depth_2_titl::before {
+    content: "";
+    background: url(../assets/img/icon_battery.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 15px;
+    display: block;
+}
+#cnbSet .list_rack_module .depth_3_wrap .depth_2_titl::before {
+    content: "";
+    background: url(../assets/img/icon_rack.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 15px;
+    display: block;
+}
+#cnbSet .list_system .depth_3_wrap .depth_2_titl::before {
+    content: "";
+    background: url(../assets/img/icon_setup.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 15px;
+    display: block;
+}
+#cnbSet .cnb_wrap .depth_3_wrap .depth_3 {
     display: flex;
 }
-.cnb_wrap .depth_3_wrap .depth_3 a {
+#cnbSet .cnb_wrap .depth_3_wrap .depth_3 a {
     margin-right: 40px;
     position: relative;
 }
-.cnb_wrap .depth_3_wrap .depth_3_titl {
+#cnbSet .cnb_wrap .depth_3_wrap .depth_3_titl {
     line-height: 40px;
     font-weight: 500;
     color: #777777;
 }
-.cnb_wrap .depth_3_wrap .depth_3_titl:last-child {
+#cnbSet .cnb_wrap .depth_3_wrap .depth_3_titl:last-child {
     margin-right: 0px;
 }
 </style>
