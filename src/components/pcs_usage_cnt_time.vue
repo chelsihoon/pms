@@ -473,7 +473,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-right: 1px solid #ddd;
 }
 #pcs_usage_cnt_time_wrap .cnt_center .cnt_table .list li.sub_titl {
-    width: 152px;
+    /* width: 152px; */
+    flex: 3;
 }
 #pcs_usage_cnt_time_wrap .cnt_center .cnt_table .list li.sub_titl p {
     font-weight: 500;

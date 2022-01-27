@@ -8,7 +8,9 @@
                 <a href="/pcs-usage"
                     ><h3 class="depth_2_titl">PCS 사용량</h3></a
                 >
-                <a href=""><h3 class="depth_2_titl">PCS 이력</h3></a>
+                <a href="/pcs-history"
+                    ><h3 class="depth_2_titl">PCS 이력</h3></a
+                >
                 <a href=""><h3 class="depth_2_titl">PCS 수동제어</h3></a>
                 <a href=""><h3 class="depth_2_titl">PCS 설정</h3></a>
             </nav>
