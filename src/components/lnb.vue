@@ -2,8 +2,12 @@
     <section id="lnbSet">
         <div class="lnb_wrap wrap">
             <nav class="lnb depth_2 list_pcs">
-                <a href=""><h3 class="depth_2_titl selected_2">PCS 현황</h3></a>
-                <a href=""><h3 class="depth_2_titl">PCS 사용량</h3></a>
+                <a href="/pcs-situation"
+                    ><h3 class="depth_2_titl selected_2">PCS 현황</h3></a
+                >
+                <a href="/pcs-usage"
+                    ><h3 class="depth_2_titl">PCS 사용량</h3></a
+                >
                 <a href=""><h3 class="depth_2_titl">PCS 이력</h3></a>
                 <a href=""><h3 class="depth_2_titl">PCS 수동제어</h3></a>
                 <a href=""><h3 class="depth_2_titl">PCS 설정</h3></a>

@@ -78,7 +78,9 @@ span,
 a,
 label,
 input,
-button {
+button,
+option,
+select {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
     color: #fff;

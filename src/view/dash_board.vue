@@ -19,7 +19,7 @@
                                                 alt="태양광 아이콘"
                                             />
                                         </div>
-                                        <h class="icn_text">태양광</h>
+                                        <h4 class="icn_text">태양광</h4>
                                     </div>
                                     <div class="itm_value">
                                         <p><span>9.3</span>kW</p>
