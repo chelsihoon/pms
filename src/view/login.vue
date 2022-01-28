@@ -66,6 +66,9 @@ img {
     display: block;
 }
 
+body {
+    background-color: #f4f7fc;
+}
 #login h1,
 h2,
 h3,

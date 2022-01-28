@@ -3,10 +3,10 @@
         <mainHeader></mainHeader>
         <gnbSet></gnbSet>
         <lnbSet></lnbSet>
-        <section id="pcs_usage_time">
+        <section id="pcs_usage_cnt">
             <cnbSet></cnbSet>
-            <section class="pcs_usage_time_wrap">
-                <pcsUsageCntTop> </pcsUsageCntTop>
+            <section class="pcs_usage_cnt_wrap">
+                <pcsCntTop> </pcsCntTop>
                 <pcsUsageCntTime></pcsUsageCntTime>
                 <!-- <pcsUsageCntDay></pcsUsageCntDay> -->
                 <!-- <pcsUsageCntMonth></pcsUsageCntMonth> -->
@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import mainHeader from "../components/mainHeader.vue";
+import mainHeader from "../components/main_header.vue";
 import gnbSet from "../components/gnb.vue";
-import mainFooter from "../components/mainFooter.vue";
+import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsUsageCntTop from "../components/pcs_usage_cnt_top.vue";
+import pcsCntTop from "../components/pcs_cnt_top.vue";
 import pcsUsageCntTime from "../components/pcs_usage_cnt_time.vue";
 // import pcsUsageCntDay from "../components/pcs_usage_cnt_day.vue";
 // import pcsUsageCntMonth from "../components/pcs_usage_cnt_month.vue";
@@ -38,7 +38,7 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsUsageCntTop,
+        pcsCntTop,
         pcsUsageCntTime,
         // pcsUsageCntDay,
         // pcsUsageCntMonth,
@@ -73,19 +73,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_usage_time #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_usage_cnt #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_usage_time #cnbSet .cnb_wrap .depth_3_wrap:nth-child(2) {
+#pcs_usage_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(2) {
     display: flex;
 }
-#pcs_usage_time .pcs_usage_time_wrap {
+#pcs_usage_cnt .pcs_usage_cnt_wrap {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.pcs_usage_time_wrap #pcs_usage_cnt_top_wrap .cnt_wrap .search {
+.pcs_usage_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
     display: block;
 }
 </style>

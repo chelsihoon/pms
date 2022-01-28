@@ -2,7 +2,7 @@
     <section id="gnbSet">
         <nav id="gnb">
             <h1 class="main_logo">
-                <a href="/"
+                <a href="/login"
                     ><img src="../assets/img/logo_white.png" alt="퀀텀로고"
                 /></a>
             </h1>

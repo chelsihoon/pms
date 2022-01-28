@@ -6,7 +6,7 @@
         <section id="pcs_situation_cnt">
             <cnbSet></cnbSet>
             <section class="pcs_situation_cnt_wrap">
-                <pcsUsageCntTop></pcsUsageCntTop>
+                <pcsCntTop></pcsCntTop>
                 <div class="cnt_left">
                     <div class="cnt_left_top cnt_wrap">
                         <h4 class="cnt_titl">운행상태</h4>
@@ -345,12 +345,12 @@
 </template>
 
 <script>
-import mainHeader from "../components/mainHeader.vue";
+import mainHeader from "../components/main_header.vue";
 import gnbSet from "../components/gnb.vue";
-import mainFooter from "../components/mainFooter.vue";
+import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsUsageCntTop from "../components/pcs_usage_cnt_top.vue";
+import pcsCntTop from "../components/pcs_cnt_top.vue";
 
 export default {
     name: "pcsSituation",
@@ -360,7 +360,7 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsUsageCntTop,
+        pcsCntTop,
     },
 };
 </script>
@@ -439,6 +439,7 @@ export default {
     margin-bottom: 32px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 #pcs_situation_cnt .cnt_left .cnt_left_top .itm_titl {
     width: 100%;
@@ -654,10 +655,7 @@ export default {
 #pcs_situation_cnt .cnt_right .itm_wrap_4 .itm_wrap_4_itm:last-child {
     margin-right: 0px;
 }
-.pcs_situation_cnt_wrap #pcs_usage_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_situation_cnt_wrap #pcs_usage_cnt_top_wrap .cnt_top input {
+.pcs_situation_cnt_wrap #pcs_cnt_top_wrap .cnt_top input {
     display: none;
 }
 </style>

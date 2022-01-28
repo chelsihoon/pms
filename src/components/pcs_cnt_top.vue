@@ -1,5 +1,5 @@
 <template>
-    <section id="pcs_history_cnt_top_wrap">
+    <section id="pcs_cnt_top_wrap">
         <div class="cnt_top cnt_wrap">
             <select name="" id="">
                 <option value="">새 PCS #0</option>
@@ -14,14 +14,16 @@
                 <div class="month_wave">~</div>
                 <input type="month" name="" value="2020-08" class="cnt_month" />
             </div>
-            <button class="search">조회</button>
+            <button class="search btn">조회</button>
+            <button class="add btn">PCS 추가</button>
+            <button class="regist btn">등록</button>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-    name: "pcsHistoryCntTop",
+    name: "pcsCntTop",
     components: {},
 };
 </script>
@@ -49,17 +51,17 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-#pcs_history_cnt_top_wrap {
+#pcs_cnt_top_wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-#pcs_history_cnt_top_wrap .cnt_wrap {
+#pcs_cnt_top_wrap .cnt_wrap {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-#pcs_history_cnt_top_wrap .cnt_wrap .cnt_titl {
+#pcs_cnt_top_wrap .cnt_wrap .cnt_titl {
     color: #313748;
     font-weight: 500;
     font-size: 18px;
@@ -68,7 +70,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     width: 100%;
     position: relative;
 }
-#pcs_history_cnt_top_wrap .cnt_top {
+#pcs_cnt_top_wrap .cnt_top {
     width: 100%;
     height: 88px;
     display: flex;
@@ -76,7 +78,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     align-items: center;
     padding: 20px 24px;
 }
-#pcs_history_cnt_top_wrap .cnt_top select {
+#pcs_cnt_top_wrap .cnt_top select {
     border: 1px solid #ddd;
     width: 240px;
     height: 48px;
@@ -88,11 +90,11 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     margin-right: 8px;
 }
-#pcs_history_cnt_top_wrap .cnt_top select option {
+#pcs_cnt_top_wrap .cnt_top select option {
     color: #444444;
     font-size: 14px;
 }
-#pcs_history_cnt_top_wrap .cnt_top input {
+#pcs_cnt_top_wrap .cnt_top input {
     border: 1px solid #ddd;
     width: 240px;
     height: 48px;
@@ -104,14 +106,14 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     margin-right: 8px;
     font-size: 14px;
 }
-#pcs_history_cnt_top_wrap .cnt_top .month_wrap {
+#pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: flex;
     display: none;
 }
-#pcs_history_cnt_top_wrap .cnt_top .month_wrap .cnt_month:first-child {
+#pcs_cnt_top_wrap .cnt_top .month_wrap .cnt_month:first-child {
     margin: 0px;
 }
-#pcs_history_cnt_top_wrap .cnt_top .month_wrap .month_wave {
+#pcs_cnt_top_wrap .cnt_top .month_wrap .month_wave {
     margin: 0 7px;
     color: #777;
     font-size: 16px;
@@ -119,7 +121,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
 }
-#pcs_history_cnt_top_wrap .cnt_top input::after {
+#pcs_cnt_top_wrap .cnt_top input::after {
     position: absolute;
     left: 16px;
     content: "";
@@ -127,7 +129,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     height: 16px;
     background: url(../assets/img/ico_calendar.png) no-repeat;
 }
-#pcs_history_cnt_top_wrap .cnt_wrap .search {
+#pcs_cnt_top_wrap .cnt_wrap .btn {
     width: 136px;
     height: 48px;
     background-color: #1d3e7a;
@@ -137,5 +139,6 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     border-radius: 4px;
     margin-left: auto;
     cursor: pointer;
+    display: none;
 }
 </style>

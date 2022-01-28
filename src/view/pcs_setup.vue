@@ -1,14 +1,14 @@
 <template>
-    <section id="pcs_history">
+    <section id="pcs_setup">
         <mainHeader></mainHeader>
         <gnbSet></gnbSet>
         <lnbSet></lnbSet>
-        <section id="pcs_history_cnt">
+        <section id="pcs_setup_cnt">
             <cnbSet></cnbSet>
-            <section class="pcs_history_cnt_wrap">
+            <section class="pcs_setup_cnt_wrap">
                 <pcsCntTop></pcsCntTop>
-                <pcsHistoryCntOperation></pcsHistoryCntOperation>
-                <!-- <pcsHistoryCntTrouble></pcsHistoryCntTrouble> -->
+                <pcsSetupCntSetting></pcsSetupCntSetting>
+                <!-- <pcsSetupCntDefault></pcsSetupCntDefault> -->
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -22,11 +22,11 @@ import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
 import pcsCntTop from "../components/pcs_cnt_top.vue";
-import pcsHistoryCntOperation from "../components/pcs_history_cnt_operation.vue";
-// import pcsHistoryCntTrouble from "../components/pcs_history_cnt_trouble.vue";
+import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
+// import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
 
 export default {
-    name: "pcsHistory",
+    name: "pcsSetup",
     components: {
         mainHeader,
         gnbSet,
@@ -34,8 +34,8 @@ export default {
         cnbSet,
         lnbSet,
         pcsCntTop,
-        pcsHistoryCntOperation,
-        // pcsHistoryCntTrouble,
+        pcsSetupCntSetting,
+        // pcsSetupCntDefault,
     },
 };
 </script>
@@ -62,29 +62,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-#pcs_history {
+#pcs_setup {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_history_cnt #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_setup_cnt #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_history_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(3) {
+#pcs_setup_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(5) {
     display: flex;
 }
-#pcs_history_cnt .pcs_history_cnt_wrap {
+#pcs_setup_cnt .pcs_setup_cnt_wrap {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
+    display: none;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
     display: block;
 }
-.pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: flex;
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
+    display: none;
 }
-.pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: none;
 }
 </style>

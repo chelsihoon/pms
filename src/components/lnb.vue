@@ -11,8 +11,10 @@
                 <a href="/pcs-history"
                     ><h3 class="depth_2_titl">PCS 이력</h3></a
                 >
-                <a href=""><h3 class="depth_2_titl">PCS 수동제어</h3></a>
-                <a href=""><h3 class="depth_2_titl">PCS 설정</h3></a>
+                <a href="/pcs-menual"
+                    ><h3 class="depth_2_titl">PCS 수동제어</h3></a
+                >
+                <a href="/pcs-setup"><h3 class="depth_2_titl">PCS 설정</h3></a>
             </nav>
             <nav class="lnb depth_2 list_battery">
                 <a href=""><h3 class="depth_2_titl">Battery 현황</h3></a>

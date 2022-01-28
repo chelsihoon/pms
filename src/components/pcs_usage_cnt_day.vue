@@ -292,20 +292,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-#pcs_usage_cnt_top_wrap .cnt_top .cnt_date {
+#pcs_cnt_top_wrap .cnt_top .cnt_date {
     display: none;
 }
-#pcs_usage_cnt_top_wrap .cnt_top .month_wrap {
+#pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: flex;
 }
-#pcs_usage_cnt_top_wrap .cnt_top .month_wrap > *:not(:last-child) {
+#pcs_cnt_top_wrap .cnt_top .month_wrap > *:not(:last-child) {
     display: none;
 }
 #pcs_usage_cnt_day_wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* padding: 24px 32px; */
 }
 #pcs_usage_cnt_day_wrap .cnt_wrap {
     background-color: #fff;

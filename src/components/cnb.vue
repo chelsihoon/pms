@@ -18,7 +18,9 @@
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 이력</h3>
                 <nav class="cnb depth_3 list_pcs_history">
-                    <a href=""><h4 class="depth_3_titl">운행이력</h4></a>
+                    <a href="" class="selected_3"
+                        ><h4 class="depth_3_titl selected_2">운행이력</h4></a
+                    >
                     <a href=""><h4 class="depth_3_titl">고장이력</h4></a>
                 </nav>
             </div>
@@ -28,7 +30,9 @@
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 설정</h3>
                 <nav class="cnb depth_3 list_pcs_setting">
-                    <a href=""><h4 class="depth_3_titl">PCS 설정</h4></a>
+                    <a href="" class="selected_3"
+                        ><h4 class="depth_3_titl selected_2">PCS 설정</h4></a
+                    >
                     <a href=""><h4 class="depth_3_titl">자동제어 기준값</h4></a>
                     <a href=""><h4 class="depth_3_titl">스케줄 설정</h4></a>
                 </nav>

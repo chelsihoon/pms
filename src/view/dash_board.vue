@@ -283,9 +283,9 @@
 </template>
 
 <script>
-import mainHeader from "../components/mainHeader.vue";
+import mainHeader from "../components/main_header.vue";
 import gnbSet from "../components/gnb.vue";
-import mainFooter from "../components/mainFooter.vue";
+import mainFooter from "../components/main_footer.vue";
 
 export default {
     name: "dashBoard",
