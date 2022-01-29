@@ -81,6 +81,24 @@ export default {
     Bold 700
     Black 900
   */
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap select {
+    display: none;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
+    display: none;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
+    display: block;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .regist {
+    display: none;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
+    display: none;
+}
+.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
+    display: none;
+}
 #pcs_setup_cnt_setting {
     width: 100%;
 }
@@ -293,6 +311,16 @@ export default {
     + label
     .toggle_btn:before {
     left: 2px;
+}
+#pcs_setup_cnt_setting
+    .pcs_setup_cnt_setting_wrap
+    .cnt_left
+    .list
+    .toggle_box
+    input[type="checkbox"]:checked
+    + label
+    .toggle_btn {
+    background-color: #becce7;
 }
 #pcs_setup_cnt_setting
     .pcs_setup_cnt_setting_wrap

@@ -100,9 +100,11 @@ select {
   */
 
 /* 공통 */
+
 html,
 body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 ::placeholder {
     font-size: 14px;

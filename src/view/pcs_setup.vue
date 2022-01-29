@@ -7,8 +7,9 @@
             <cnbSet></cnbSet>
             <section class="pcs_setup_cnt_wrap">
                 <pcsCntTop></pcsCntTop>
-                <pcsSetupCntSetting></pcsSetupCntSetting>
+                <!-- <pcsSetupCntSetting></pcsSetupCntSetting> -->
                 <!-- <pcsSetupCntDefault></pcsSetupCntDefault> -->
+                <pcssetupCntSchedule></pcssetupCntSchedule>
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -22,8 +23,9 @@ import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
 import pcsCntTop from "../components/pcs_cnt_top.vue";
-import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
+// import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
 // import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
+import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
 
 export default {
     name: "pcsSetup",
@@ -34,8 +36,9 @@ export default {
         cnbSet,
         lnbSet,
         pcsCntTop,
-        pcsSetupCntSetting,
+        // pcsSetupCntSetting,
         // pcsSetupCntDefault,
+        pcssetupCntSchedule,
     },
 };
 </script>
@@ -82,7 +85,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 .pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
-    display: block;
+    display: none;
 }
 .pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
     display: none;

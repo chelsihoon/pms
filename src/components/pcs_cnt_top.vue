@@ -38,6 +38,10 @@ export default {
     Bold 700
     Black 900
   */
+#pcs_cnt_top_wrap input:focus,
+#pcs_cnt_top_wrap select:focus {
+    outline: 2px solid #2a58ae;
+}
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
