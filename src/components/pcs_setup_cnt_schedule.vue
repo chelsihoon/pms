@@ -202,9 +202,9 @@
                 <li class="choose">
                     <h5>PCS명</h5>
                     <select name="" id="">
-                        <option value="PCS 선택"></option>
-                        <option value="PCS 선택"></option>
-                        <option value="PCS 선택"></option>
+                        <option>PCS 선택</option>
+                        <option>PCS 선택</option>
+                        <option>PCS 선택</option>
                     </select>
                 </li>
                 <li class="mode">
@@ -222,8 +222,8 @@
                         type="radio"
                         value=""
                         id="discharger"
-                        disabled="disabled"
                         name="state"
+                        disabled="disabled"
                     />
                     <label for="discharger"> 방전</label>
                 </li>
@@ -235,7 +235,7 @@
                         value="2020-08-15"
                         class="start_date"
                     />
-                    <div class="month_wave">~</div>
+                    <div class="wave">~</div>
                     <input
                         type="date"
                         name=""
@@ -249,10 +249,11 @@
                         <input
                             type="time"
                             name=""
-                            value="00:00:00"
+                            value="01:01:01"
                             class="start_time"
+                            ng-model="endTime"
                         />
-                        <div class="month_wave">~</div>
+                        <div class="wave">~</div>
                         <input
                             type="time"
                             name=""
@@ -260,30 +261,60 @@
                             class="end_time"
                         />
                     </div>
-                    <input type="checkbox" value="하루종일" />
+                    <label for="all_day" class="inner">
+                        <input type="checkbox" id="all_day" />
+                        하루종일
+                    </label>
                 </li>
                 <li class="solar">
-                    <h5>시간</h5>
-                    <input type="checkbox" value="태양열 연동" />
+                    <h5>태양열 연동</h5>
+                    <label for="solar_interlock">
+                        <input type="checkbox" id="solar_interlock" />
+                        태양열 연동
+                    </label>
                 </li>
                 <li class="target">
-                    <h5>시간</h5>
+                    <h5>목표전력량 [kW]</h5>
                     <input type="number" value="0" />
                 </li>
                 <li class="days">
                     <h5>요일</h5>
-                    <div class="inner">
+                    <div class="inner_wrap">
                         <div class="inner_top">
-                            <input type="checkbox" value="전체" />
-                            <input type="checkbox" value="일요일" />
-                            <input type="checkbox" value="월요일" />
-                            <input type="checkbox" value="화요일" />
+                            <label for="all">
+                                <input type="checkbox" id="all" />
+                                전체
+                            </label>
+                            <label for="sun">
+                                <input type="checkbox" id="sun" />
+                                일요일
+                            </label>
+                            <label for="mon">
+                                <input type="checkbox" id="mon" />
+                                월요일
+                            </label>
+                            <label for="tue">
+                                <input type="checkbox" id="tue" />
+                                화요일
+                            </label>
                         </div>
                         <div class="inner_btm">
-                            <input type="checkbox" value="수요일" />
-                            <input type="checkbox" value="목요일" />
-                            <input type="checkbox" value="금요일" />
-                            <input type="checkbox" value="토요일" />
+                            <label for="wed">
+                                <input type="checkbox" id="wed" />
+                                수요일
+                            </label>
+                            <label for="thu">
+                                <input type="checkbox" id="thu" />
+                                목요일
+                            </label>
+                            <label for="fri">
+                                <input type="checkbox" id="fri" />
+                                금요일
+                            </label>
+                            <label for="sat">
+                                <input type="checkbox" id="sat" />
+                                토요일
+                            </label>
                         </div>
                     </div>
                 </li>
@@ -320,18 +351,20 @@ export default {
     Bold 700
     Black 900
   */
-/* input[type="date"]::-webkit-clear-button,
-input[type="date"]::-webkit-inner-spin-button {
+
+input[type="time"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button {
     display: none;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+
+input[type="time"]::-webkit-calendar-picker-indicator {
     background: transparent;
     position: absolute;
-    left: -12px;
+    left: 2px;
     width: 20px;
     height: 20px;
     z-index: 1;
-} */
+}
 .pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap select {
     display: none;
 }
@@ -557,43 +590,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
+    display: none;
 }
 #pcs_setup_cnt_schedule .light_box .cnt_box_wrap {
     position: absolute;
     min-width: 712px;
-    min-height: 766px;
     background-color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
     padding: 24px 32px;
-}
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li {
-    display: flex;
-}
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input[type="date"],
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input[type="time"],
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li select {
-    min-width: 240px;
-    min-height: 48px;
-    padding: 14px 16px;
-    border: 1px solid #dddddd;
-    border-radius: 2px;
-}
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input[type="checkbox"] {
-    border: 5px solid #dddddd;
-    display: inline-block;
-    background-color: #000;
-}
-
-#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li h5 {
-    min-width: 144px;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: #222;
 }
 #pcs_setup_cnt_schedule .light_box .cnt_box_wrap .cnt_titl {
     color: #313748;
@@ -604,5 +611,285 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     position: relative;
     margin-bottom: 16px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap label {
+    color: #777;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li {
+    display: flex;
+    align-items: center;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li .wave {
+    color: #777777;
+    margin: 0 7px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input[type="date"],
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input[type="time"],
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li select {
+    width: 240px;
+    height: 48px;
+    padding: 14px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    color: #444444;
+    font-size: 14px;
+    position: relative;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .choose select {
+    appearance: none;
+    background: url(../assets/img/select_arr.png) no-repeat 90% 50%;
+    cursor: pointer;
+}
+
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li input:focus,
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li select:focus {
+    outline: 2px solid #2a58ae;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li option {
+    color: #444444;
+    font-size: 14px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap li h5 {
+    min-width: 144px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .choose {
+    margin-bottom: 28px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .mode {
+    margin-bottom: 28px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .mode label {
+    color: #777777;
+    margin-left: 8px;
+    margin-right: 32px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .mode input:checked + label {
+    color: #2a58ae;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .dater {
+    color: #2a58ae;
+    margin-bottom: 16px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .dater input[type="date"],
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .timer input[type="time"] {
+    padding-left: 40px;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .dater
+    input[type="date"]::after {
+    position: absolute;
+    left: 16px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/ico_calendar.png) no-repeat;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .timer {
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 28px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .timer .inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .timer .inner:last-child {
+    width: calc(100% - 144px);
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap label input {
+    margin-right: 8px;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .timer
+    input[type="time"]::after {
+    position: absolute;
+    left: 16px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/ico_clock.png) no-repeat;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .solar {
+    flex-wrap: wrap;
+    display: flex;
+    margin-bottom: 32px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .target {
+    margin-bottom: 32px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .target input {
+    width: 280px;
+    height: 40px;
+    padding: 10px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #444444;
+    font-size: 14px;
+    position: relative;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .days {
+    margin-bottom: 28px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .days .inner_wrap {
+    display: flex;
+    flex-direction: column;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .days .inner_wrap > div {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .days .inner_wrap > div label {
+    width: 67px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .toggle {
+    margin-bottom: 52px;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"] {
+    display: none;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .toggle .toggle_btn {
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    border-radius: 50px;
+    background: #2a58ae;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .toggle .toggle_btn:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 26px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 100%;
+    transition: left 0.3s;
+    color: #444444;
+    cursor: pointer;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]
+    + label {
+    position: relative;
+    cursor: pointer;
+    margin-left: 60px;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]
+    + label:after {
+    content: "사용함";
+    display: block;
+    position: absolute;
+    color: #2a58ae;
+    font-weight: 500;
+    right: -48px;
+    top: 0;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]
+    + label
+    .toggle_btn:after {
+    content: "사용안함";
+    display: block;
+    position: absolute;
+    color: #444444;
+    left: -64px;
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]:checked
+    + label
+    .toggle_btn:before {
+    left: 2px;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]:checked
+    + label
+    .toggle_btn {
+    background-color: #becce7;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]:checked
+    + label
+    .toggle_btn:after {
+    color: #2a58ae;
+    font-weight: 500;
+}
+#pcs_setup_cnt_schedule
+    .light_box
+    .cnt_box_wrap
+    .toggle
+    input[type="checkbox"]:checked
+    + label:after {
+    color: #444;
+    font-weight: 400;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .set_btn {
+    justify-content: center;
+    margin-bottom: 8px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .set_btn input {
+    width: 136px;
+    height: 48px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .set_btn input:first-child {
+    background-color: #313748;
+    border: 1px solid #171a24;
+    margin-right: 8px;
+}
+#pcs_setup_cnt_schedule .light_box .cnt_box_wrap .set_btn input:last-child {
+    background-color: #2a58ae;
+    border: 1px solid #0f3884;
 }
 </style>

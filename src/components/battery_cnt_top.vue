@@ -1,5 +1,5 @@
 <template>
-    <section id="pcs_cnt_top_wrap">
+    <section id="battery_cnt_top_wrap">
         <div class="cnt_top cnt_wrap">
             <select name="" id="">
                 <option value="">새 PCS #0</option>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: "pcsCntTop",
+    name: "batteryCntTop",
     components: {},
 };
 </script>
@@ -38,8 +38,8 @@ export default {
     Bold 700
     Black 900
   */
-#pcs_cnt_top_wrap input:focus,
-#pcs_cnt_top_wrap select:focus {
+#battery_cnt_top_wrap input:focus,
+#battery_cnt_top_wrap select:focus {
     outline: 2px solid #2a58ae;
 }
 input[type="date"]::-webkit-clear-button,
@@ -55,17 +55,17 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-#pcs_cnt_top_wrap {
+#battery_cnt_top_wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-#pcs_cnt_top_wrap .cnt_wrap {
+#battery_cnt_top_wrap .cnt_wrap {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-#pcs_cnt_top_wrap .cnt_wrap .cnt_titl {
+#battery_cnt_top_wrap .cnt_wrap .cnt_titl {
     color: #313748;
     font-weight: 500;
     font-size: 18px;
@@ -74,14 +74,14 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     width: 100%;
     position: relative;
 }
-#pcs_cnt_top_wrap .cnt_top {
+#battery_cnt_top_wrap .cnt_top {
     width: 100%;
     height: 88px;
     display: flex;
     align-items: center;
     padding: 20px 24px;
 }
-#pcs_cnt_top_wrap .cnt_top select {
+#battery_cnt_top_wrap .cnt_top select {
     border: 1px solid #ddd;
     width: 240px;
     height: 48px;
@@ -93,11 +93,11 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     margin-right: 8px;
 }
-#pcs_cnt_top_wrap .cnt_top select option {
+#battery_cnt_top_wrap .cnt_top select option {
     color: #444444;
     font-size: 14px;
 }
-#pcs_cnt_top_wrap .cnt_top input {
+#battery_cnt_top_wrap .cnt_top input {
     border: 1px solid #ddd;
     width: 240px;
     height: 48px;
@@ -109,14 +109,14 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     margin-right: 8px;
     font-size: 14px;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap {
+#battery_cnt_top_wrap .cnt_top .month_wrap {
     display: flex;
     display: none;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap .cnt_month:first-child {
+#battery_cnt_top_wrap .cnt_top .month_wrap .cnt_month:first-child {
     margin: 0px;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap .month_wave {
+#battery_cnt_top_wrap .cnt_top .month_wrap .month_wave {
     margin: 0 7px;
     color: #777;
     font-size: 16px;
@@ -124,7 +124,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     display: flex;
     align-items: center;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap input::after {
+#battery_cnt_top_wrap .cnt_top .month_wrap input::after {
     position: absolute;
     left: 16px;
     content: "";
@@ -132,7 +132,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     height: 16px;
     background: url(../assets/img/ico_calendar.png) no-repeat;
 }
-#pcs_cnt_top_wrap .cnt_wrap .btn {
+#battery_cnt_top_wrap .cnt_wrap .btn {
     width: 136px;
     height: 48px;
     background-color: #1d3e7a;

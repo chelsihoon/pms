@@ -20,10 +20,12 @@
                         </li>
                         <li class="itm toggle_box">
                             <p>사용 여부</p>
-                            <input type="checkbox" id="toggle_box" />
-                            <label for="toggle_box">
-                                <span class="toggle_btn"></span>
-                            </label>
+                            <div>
+                                <input type="checkbox" id="toggle_box" />
+                                <label for="toggle_box">
+                                    <span class="toggle_btn"></span>
+                                </label>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -226,6 +228,9 @@ export default {
     width: 100%;
     margin-bottom: auto;
 }
+#pcs_setup_cnt_setting .pcs_setup_cnt_setting_wrap .cnt_left .list .toggle_box {
+    margin-right: 50px;
+}
 #pcs_setup_cnt_setting
     .pcs_setup_cnt_setting_wrap
     .cnt_left
@@ -234,7 +239,12 @@ export default {
     input[type="checkbox"] {
     display: none;
 }
-.toggle_btn {
+#pcs_setup_cnt_setting
+    .pcs_setup_cnt_setting_wrap
+    .cnt_left
+    .list
+    .toggle_box
+    .toggle_btn {
     display: block;
     position: relative;
     width: 48px;
@@ -242,7 +252,12 @@ export default {
     border-radius: 50px;
     background: #2a58ae;
 }
-.toggle_btn:before {
+#pcs_setup_cnt_setting
+    .pcs_setup_cnt_setting_wrap
+    .cnt_left
+    .list
+    .toggle_box
+    .toggle_btn:before {
     content: "";
     display: block;
     position: absolute;
@@ -279,7 +294,7 @@ export default {
     position: absolute;
     color: #2a58ae;
     font-weight: 500;
-    right: -48px;
+    right: -96px;
     top: 0;
     font-size: 16px;
     font-family: "Noto Sans KR", sans-serif;

@@ -6,6 +6,7 @@ import pcsUsage from "./view/pcs_usage.vue";
 import pcsHistory from "./view/pcs_history.vue";
 import pcsMenual from "./view/pcs_menual.vue";
 import pcsSetup from "./view/pcs_setup.vue";
+import batterySituation from "./view/battery_situation.vue";
 
 const routes = {
     "/login": login,
@@ -15,6 +16,7 @@ const routes = {
     "/pcs-history": pcsHistory,
     "/pcs-menual": pcsMenual,
     "/pcs-setup": pcsSetup,
+    "/battery-situation": batterySituation,
 };
 
 const SimpleRouter = {
