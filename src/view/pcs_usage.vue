@@ -73,11 +73,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_usage_cnt #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_usage #lnbSet .lnb_wrap .depth_2:nth-child(1) {
+    display: flex;
+}
+/* cnb : lnb title 번호 지정 1 ~ 4 */
+#pcs_usage #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_usage_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(2) {
+#pcs_usage #cnbSet .cnb_wrap .depth_3_wrap:nth-child(2) {
     display: flex;
 }
 #pcs_usage_cnt .pcs_usage_cnt_wrap {

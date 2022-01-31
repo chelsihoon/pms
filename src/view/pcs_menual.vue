@@ -253,11 +253,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_menual_cnt #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_menual #lnbSet .lnb_wrap .depth_2:nth-child(1) {
+    display: flex;
+}
+/* cnb : lnb title 번호 지정 1 ~ 4 */
+#pcs_menual #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_menual_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(4) {
+#pcs_menual #cnbSet .cnb_wrap .depth_3_wrap:nth-child(4) {
     display: flex;
 }
 #pcs_menual_cnt .pcs_menual_cnt_wrap {

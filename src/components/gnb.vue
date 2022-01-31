@@ -11,7 +11,9 @@
                     ><h2 class="depth_1_titl selected_1">대시보드</h2></a
                 >
                 <a href="/pcs-situation"><h2 class="depth_1_titl">PCS</h2></a>
-                <a href=""><h2 class="depth_1_titl">Battery</h2></a>
+                <a href="/battery-situation"
+                    ><h2 class="depth_1_titl">Battery</h2></a
+                >
                 <a href=""><h2 class="depth_1_titl">Rack,Module</h2></a>
                 <a href=""><h2 class="depth_1_titl">시스템 관리</h2></a>
             </div>
@@ -123,9 +125,7 @@ export default {
     align-items: center;
     display: none;
 }
-.lnb:first-child {
-    display: flex;
-}
+
 .lnb a {
     margin-right: 40px;
 }

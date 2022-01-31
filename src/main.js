@@ -7,6 +7,9 @@ import pcsHistory from "./view/pcs_history.vue";
 import pcsMenual from "./view/pcs_menual.vue";
 import pcsSetup from "./view/pcs_setup.vue";
 import batterySituation from "./view/battery_situation.vue";
+import batteryHistory from "./view/battery_history.vue";
+import batteryMenual from "./view/battery_menual.vue";
+import batterySetup from "./view/battery_setup.vue";
 
 const routes = {
     "/login": login,
@@ -17,6 +20,9 @@ const routes = {
     "/pcs-menual": pcsMenual,
     "/pcs-setup": pcsSetup,
     "/battery-situation": batterySituation,
+    "/battery-history": batteryHistory,
+    "/battery-menual": batteryMenual,
+    "/battery-setup": batterySetup,
 };
 
 const SimpleRouter = {

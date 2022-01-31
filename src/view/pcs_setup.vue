@@ -7,9 +7,9 @@
             <cnbSet></cnbSet>
             <section class="pcs_setup_cnt_wrap">
                 <pcsCntTop></pcsCntTop>
-                <!-- <pcsSetupCntSetting></pcsSetupCntSetting> -->
+                <pcsSetupCntSetting></pcsSetupCntSetting>
                 <!-- <pcsSetupCntDefault></pcsSetupCntDefault> -->
-                <pcssetupCntSchedule></pcssetupCntSchedule>
+                <!-- <pcssetupCntSchedule></pcssetupCntSchedule> -->
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -23,9 +23,9 @@ import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
 import pcsCntTop from "../components/pcs_cnt_top.vue";
-// import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
+import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
 // import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
-import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
+// import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
 
 export default {
     name: "pcsSetup",
@@ -36,9 +36,9 @@ export default {
         cnbSet,
         lnbSet,
         pcsCntTop,
-        // pcsSetupCntSetting,
+        pcsSetupCntSetting,
         // pcsSetupCntDefault,
-        pcssetupCntSchedule,
+        // pcssetupCntSchedule,
     },
 };
 </script>
@@ -69,11 +69,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_setup_cnt #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_setup #lnbSet .lnb_wrap .depth_2:nth-child(1) {
+    display: flex;
+}
+/* cnb : lnb title 번호 지정 1 ~ 4 */
+#pcs_setup #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_setup_cnt #cnbSet .cnb_wrap .depth_3_wrap:nth-child(5) {
+#pcs_setup #cnbSet .cnb_wrap .depth_3_wrap:nth-child(5) {
     display: flex;
 }
 #pcs_setup_cnt .pcs_setup_cnt_wrap {

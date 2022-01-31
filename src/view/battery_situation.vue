@@ -44,317 +44,416 @@
                         </div>
                     </div>
                     <div class="cnt_left_btm cnt_wrap">
-                        <div class="itm_titl_wrap">
-                            <h4 class="cnt_titl">Information</h4>
-                            <div class="itm_titl_inner">
-                                <p>출력상태</p>
-                                <img
-                                    src="../assets/img/light_green.png"
-                                    alt=""
-                                />
-                                <img src="../assets/img/light_red.png" alt="" />
-                            </div>
-                        </div>
-                        <div class="itm_left">
-                            <h5 class="itm_titl">고장번호</h5>
+                        <h4 class="cnt_titl">Information</h4>
+                        <div class="itm_inner">
                             <ul>
                                 <li>
-                                    <p class="status">정상</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">BMS S/W Ver</h5>
+                                    <p class="status">32</p>
                                 </li>
                                 <li>
-                                    <p class="status">축전지 이상</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_red.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">통신 Counter</h5>
+                                    <p class="status">44236</p>
                                 </li>
                                 <li>
-                                    <p class="status">방열판 과열</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 Pack In 평균 전압[V]
+                                    </h5>
+                                    <p class="status">540.5</p>
                                 </li>
                                 <li>
-                                    <p class="status">과부하</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 셀 합산 평균 전압[V]
+                                    </h5>
+                                    <p class="status">540.5</p>
                                 </li>
                                 <li>
-                                    <p class="status">
-                                        충전 혹은 방전시 과전류
-                                    </p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 정격 전압[V]
+                                    </h5>
+                                    <p class="status">589.5</p>
                                 </li>
                                 <li>
-                                    <p class="status">출력 과전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 정격 전류[A]
+                                    </h5>
+                                    <p class="status">355,2</p>
                                 </li>
                                 <li>
-                                    <p class="status">출력 저전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 최대 전압[V]
+                                    </h5>
+                                    <p class="status">654.3</p>
                                 </li>
                                 <li>
-                                    <p class="status">IGBT 이상</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 최소 전압[V]
+                                    </h5>
+                                    <p class="status">419.4</p>
                                 </li>
                                 <li>
-                                    <p class="status">Off-Grid 운전시 과전류</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 최대 충전 C-Rate
+                                    </h5>
+                                    <p class="status">0.5</p>
                                 </li>
                                 <li>
-                                    <p class="status">비상정지버튼 눌림</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">
+                                        배터리 시스템 최대 방전 C-Rate
+                                    </h5>
+                                    <p class="status">0.5</p>
                                 </li>
                                 <li>
-                                    <p class="status">입력 역상</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">DC 지락</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="itm_right">
-                            <h5 class="itm_titl">상태번호</h5>
-                            <ul>
-                                <li>
-                                    <p class="status">입력 주파수 이상</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">입력 과전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_red.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">입력 저전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">축전지 과전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">축전지 저전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">축전지 테스트 고장</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">BPS 주파수 비동기</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">BPS 과전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="status">BPS 저전압</p>
-                                    <div class="light">
-                                        <img
-                                            src="../assets/img/light_green.png"
-                                            alt=""
-                                        />
-                                    </div>
+                                    <h5 class="itm_titl">평균 SOH(참고용)</h5>
+                                    <p class="status">99.9</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="cnt_cneter cnt_wrap">
-                    <h4 class="cnt_titl">Battery System Fault Status</h4>
+                <div class="cnt_center cnt_wrap">
+                    <div class="itm_titl_wrap">
+                        <h4 class="cnt_titl">Battery System Fault Status</h4>
+                        <div class="itm_titl_inner">
+                            <p>출력상태</p>
+                            <img src="../assets/img/light_green.png" alt="" />
+                            <img src="../assets/img/light_red.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="itm_wrap">
+                        <ul>
+                            <li>
+                                <p class="status">Over Voltage of Cell (OVC)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Voltage of Cell (UVC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Over Temperature of Cell (OTC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Temperature of Cell (UTC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Over Charge Current (OCC)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Over Discharge Current (ODC, UCC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Can Time Out (CTO)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Over Voltage of Pack (OVP)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Voltage of Pack (UVP)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="cnt_right cnt_wrap">
-                    <div class="cnt_right_top">
-                        <h4 class="cnt_titl">계측 정보</h4>
-                        <div class="itm_wrap_1 itm_wrap">
-                            <h5 class="itm_titl">DC 및 Line 전원</h5>
-                            <div class="division_inner itm_inner">
-                                <p class="division_itm itm">구분</p>
-                                <p class="division_itm itm">A-B</p>
-                                <p class="division_itm itm">B-C</p>
-                                <p class="division_itm itm">C-A</p>
-                            </div>
-                            <div class="itm_inner_1 itm_inner">
-                                <p class="itm itm_subtitl">측전기 DC 전압[V]</p>
-                                <p class="itm">370</p>
-                            </div>
-                            <div class="itm_inner_2 itm_inner">
-                                <p class="itm itm_subtitl">측전기 DC 전류[A]</p>
-                                <p class="itm">0</p>
-                            </div>
-                            <div class="itm_inner_3 itm_inner">
-                                <p class="itm itm_subtitl">교류선간 전압[V]</p>
-                                <p class="itm">400</p>
-                                <p class="itm">399</p>
-                                <p class="itm">394</p>
-                            </div>
-                            <div class="itm_inner_4 itm_inner">
-                                <p class="itm itm_subtitl">교류선간 전류[A]</p>
-                                <p class="itm">1.4</p>
-                                <p class="itm">1.4</p>
-                                <p class="itm">1.4</p>
-                            </div>
+                    <div class="itm_titl_wrap">
+                        <h4 class="cnt_titl">Battery System Warning Status</h4>
+                        <div class="itm_titl_inner">
+                            <p>출력상태</p>
+                            <img src="../assets/img/light_green.png" alt="" />
+                            <img src="../assets/img/light_red.png" alt="" />
                         </div>
-                        <div class="itm_wrap_2 itm_wrap">
-                            <h5 class="itm_titl">AC 부하</h5>
-                            <div class="division_inner itm_inner">
-                                <p class="division_itm itm">구분</p>
-                                <p class="division_itm itm">A</p>
-                                <p class="division_itm itm">B</p>
-                                <p class="division_itm itm">C</p>
-                            </div>
-                            <div class="itm_inner_1 itm_inner">
-                                <p class="itm itm_subtitl">전압[V]</p>
-                                <p class="itm">231</p>
-                                <p class="itm">230</p>
-                                <p class="itm">231</p>
-                            </div>
-                            <div class="itm_inner_2 itm_inner">
-                                <p class="itm itm_subtitl">전류[A]</p>
-                                <p class="itm">17.2</p>
-                                <p class="itm">17.2</p>
-                                <p class="itm">18.6</p>
-                            </div>
-                            <div class="itm_inner_3 itm_inner">
-                                <p class="itm itm_subtitl">주파수[Hz]</p>
-                                <p class="itm">60</p>
-                            </div>
-                        </div>
-                        <div class="itm_wrap_3 itm_wrap">
-                            <h5 class="itm_titl">전력 및 역률</h5>
-                            <div class="division_inner itm_inner">
-                                <p class="division_itm itm">구분</p>
-                                <p class="division_itm itm">A</p>
-                                <p class="division_itm itm">B</p>
-                                <p class="division_itm itm">C</p>
-                            </div>
-                            <div class="itm_inner_1 itm_inner">
-                                <p class="itm itm_subtitl">피상전력[KVA]</p>
-                                <p class="itm">4</p>
-                                <p class="itm">4</p>
-                                <p class="itm">4.3</p>
-                            </div>
-                            <div class="itm_inner_2 itm_inner">
-                                <p class="itm itm_subtitl">유효전력[KW]</p>
-                                <p class="itm">0</p>
-                                <p class="itm">0.3</p>
-                                <p class="itm">0.6</p>
-                            </div>
-                            <div class="itm_inner_3 itm_inner">
-                                <p class="itm itm_subtitl">역률</p>
-                                <p class="itm">0</p>
-                                <p class="itm">0.8</p>
-                                <p class="itm">1.4</p>
-                            </div>
-                        </div>
-                        <div class="itm_wrap_4 itm_wrap">
-                            <div class="itm_wrap_4_top">
-                                <h5 class="itm_titl">누적충전량[KWh]</h5>
-                                <h5 class="itm_titl">누적방전량[KWh]</h5>
-                            </div>
-                            <div class="itm_wrap_4_btm">
-                                <p class="itm_wrap_4_itm itm">0</p>
-                                <p class="itm_wrap_4_itm itm">0</p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="itm_wrap">
+                        <ul>
+                            <li>
+                                <p class="status">Over Voltage of Cell (OVC)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Voltage of Cell (UVC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Over Temperature of Cell (OTC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Temperature of Cell (UTC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Over Charge Current (OCC)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Over Discharge Current (ODC, UCC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Can Time Out (CTO)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Over Voltage of Pack (OVP)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Voltage of Pack (UVP)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Under SOC (USOC)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Cell Temperature Charge (UCTC)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Under Cell Temperature Discharge (UCTD)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">
+                                    Monitoring IDC Err or (MIE)
+                                </p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                            <li>
+                                <p class="status">Over Cell Unbalance (OCU)</p>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="light">
+                                    <img
+                                        src="../assets/img/light_green.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -398,6 +497,10 @@ export default {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
+#battery_situation #lnbSet .lnb_wrap .depth_2:nth-child(2) {
+    display: flex;
+}
+/* cnb : lnb title 번호 지정 1 ~ 4 */
 #battery_situation #cnbSet .cnb_wrap:nth-child(2) {
     display: flex;
 }
@@ -405,7 +508,9 @@ export default {
 #battery_situation #cnbSet .cnb_wrap .depth_3_wrap:nth-child(1) {
     display: flex;
 }
-
+#battery_cnt_top_wrap .cnt_top .pcs {
+    display: block;
+}
 #battery_situation_cnt .battery_situation_cnt_wrap {
     display: flex;
     flex-wrap: wrap;
@@ -435,22 +540,9 @@ export default {
     align-items: center;
     padding: 20px 24px;
 }
-#battery_situation_cnt .cnt_top select {
-    border: 1px solid #ddd;
-    width: 240px;
-    height: 48px;
-    padding: 14px 16px;
-    border-radius: 2px;
-    appearance: none;
-    background: url(../assets/img/select_arr.png) no-repeat 90% 50%;
-    color: #444;
-    font-size: 14px;
-}
-#battery_situation_cnt .cnt_top select option {
-    font-size: 14px;
-}
+
 #battery_situation_cnt .cnt_left {
-    width: 960px;
+    width: 664px;
     margin-right: 32px;
     position: relative;
 }
@@ -459,18 +551,23 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 #battery_situation_cnt .cnt_left .cnt_left_top .itm_titl {
     width: 100%;
 }
 #battery_situation_cnt .cnt_left .cnt_left_top > div {
-    width: 450px;
+    width: 304px;
     height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px;
     border-radius: 4px;
+    margin-bottom: 8px;
+}
+#battery_situation_cnt .cnt_left .cnt_left_top > div:last-child {
+    margin-bottom: 0px;
 }
 #battery_situation_cnt .cnt_left .cnt_left_top > div:nth-child(2),
 #battery_situation_cnt .cnt_left .cnt_left_top > div:nth-child(3) {
@@ -509,186 +606,106 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-#battery_situation_cnt .cnt_left .cnt_left_btm .itm_titl_wrap {
+#battery_situation_cnt .itm_titl_wrap {
     position: relative;
     width: 100%;
 }
 
-#battery_situation_cnt .cnt_left .cnt_left_btm .itm_titl_wrap .itm_titl_inner {
+#battery_situation_cnt .itm_titl_wrap .itm_titl_inner {
     position: absolute;
     top: 4px;
     right: 0;
     display: flex;
 }
-#battery_situation_cnt .cnt_left .cnt_left_btm .itm_titl_wrap p {
+#battery_situation_cnt .itm_titl_wrap p {
     color: #444444;
     font-size: 14px;
     margin-right: 24px;
     font-weight: 700;
 }
-#battery_situation_cnt .cnt_left .cnt_left_btm .itm_titl_wrap img:nth-child(2) {
-    margin-right: 8px;
-}
-#battery_situation_cnt .cnt_left .cnt_left_btm > div:not(:first-child) {
-    width: 452px;
-}
-#battery_situation_cnt .cnt_left .cnt_left_btm > div:not(:first-child) li {
+#battery_situation_cnt .cnt_left .cnt_left_btm li {
     width: 100%;
-    height: 56px;
+    height: 48px;
+    background-color: #fff;
     display: flex;
-    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
 }
-#battery_situation_cnt
-    .cnt_left
-    .cnt_left_btm
-    > div:not(:first-child)
-    li:last-child {
+#battery_situation_cnt .cnt_left .cnt_left_btm li:last-child {
     margin-bottom: 0px;
 }
-#battery_situation_cnt .cnt_left .cnt_left_btm > div:not(:first-child) li > * {
+#battery_situation_cnt .cnt_left .cnt_left_btm li .status {
+    width: 292px;
+    height: 48px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+#battery_situation_cnt .cnt_left .cnt_left_btm .itm_titl {
+    width: 320px;
+    height: 48px;
+    background-color: #313748;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+#battery_situation_cnt li {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+#battery_situation_cnt li > * {
     height: 100%;
+    width: 56px;
     background-color: #f5f5f5;
     border-radius: 4px;
     display: flex;
     align-items: center;
-}
-#battery_situation_cnt
-    .cnt_left
-    .cnt_left_btm
-    > div:not(:first-child)
-    li
-    .status {
-    width: 388px;
+    justify-content: center;
     margin-right: 8px;
-    color: #444444;
+}
+#battery_situation_cnt li > *:last-child {
+    margin-right: 0px;
+}
+#battery_situation_cnt .cnt_center {
+    width: 564px;
+    position: relative;
+    margin-right: 32px;
+}
+#battery_situation_cnt .cnt_center li > *:first-child {
+    width: 452px;
+    color: #444;
     font-weight: 500;
+    font-size: 16px;
+    justify-content: flex-start;
     padding: 16px;
 }
-#battery_situation_cnt
-    .cnt_left
-    .cnt_left_btm
-    > div:not(:first-child)
-    li
-    .light {
-    width: 56px;
-    justify-content: center;
-}
-#battery_situation_cnt
-    .cnt_left
-    .cnt_left_btm
-    > div:not(:first-child)
-    .itm_titl {
-    width: 100%;
-    background-color: #313748;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 40px;
-    font-weight: 500;
-    border-radius: 4px;
-    font-size: 16px;
-    /* margin-right: 4px; */
-    margin-bottom: 8px;
-}
 #battery_situation_cnt .cnt_right {
-    flex: 1;
+    width: 564px;
     position: relative;
 }
-#battery_situation_cnt .cnt_right .cnt_right_top p {
+#battery_situation_cnt .cnt_right li > *:first-child {
+    width: 388px;
     color: #444;
-}
-#battery_situation_cnt .cnt_right .itm_wrap {
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-#battery_situation_cnt .cnt_right .itm_wrap:last-child {
-    margin-bottom: 0px;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_titl {
-    width: 100%;
-    height: 56px;
-    background-color: #313748;
-    margin-bottom: 8px;
-    color: #fff;
     font-weight: 500;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 16px;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_inner {
-    margin-bottom: 4px;
-    width: 100%;
-    display: flex;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_inner:last-child {
-    margin-bottom: 0px;
-}
-
-#battery_situation_cnt .cnt_right .itm_wrap .itm {
-    margin-right: 4px;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    height: 56px;
-    font-size: 16px;
-    flex: 0.25;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_inner .division_itm {
-    background-color: #ddd;
-    height: 40px;
-    font-weight: 500;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_inner .itm_subtitl {
-    background-color: #eee;
-    font-weight: 500;
-}
-#battery_situation_cnt .cnt_right .itm_wrap .itm_inner .itm:last-child {
-    margin-right: 0px;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_1 .itm_inner_1 .itm:nth-child(1),
-#battery_situation_cnt .cnt_right .itm_wrap_1 .itm_inner_2 .itm:nth-child(1) {
-    flex: 0.249;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_2 .itm_inner_3 .itm:nth-child(1) {
-    flex: 0.249;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_1 .itm_inner_1 .itm:nth-child(2),
-#battery_situation_cnt .cnt_right .itm_wrap_1 .itm_inner_2 .itm:nth-child(2) {
-    flex: 0.751;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_2 .itm_inner_3 .itm:nth-child(2) {
-    flex: 0.751;
-}
-
-#battery_situation_cnt .cnt_right .itm_wrap_4 {
-    display: flex;
-    flex-direction: column;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_4 > div {
-    display: flex;
-    justify-content: space-between;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_4 .itm_titl {
-    flex: 1;
-    margin-right: 4px;
-    margin-bottom: 4px;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_4 .itm_titl:last-child {
-    margin-right: 0px;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_4 .itm_wrap_4_itm {
-    flex: 1;
-}
-#battery_situation_cnt .cnt_right .itm_wrap_4 .itm_wrap_4_itm:last-child {
-    margin-right: 0px;
-}
-.battery_situation_cnt_wrap #battery_cnt_top_wrap .cnt_top input {
-    display: none;
+    justify-content: flex-start;
+    padding: 16px;
 }
 </style>
