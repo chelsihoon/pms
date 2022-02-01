@@ -11,11 +11,11 @@
                             <input type="text" value="PCS#1" />
                         </li>
                         <li class="itm">
-                            <p>PCS 용량 [kW]</p>
+                            <p>PCS 용량 <span>[kW]</span></p>
                             <input type="number" value="100" />
                         </li>
                         <li class="itm">
-                            <p>Battery 용량 [kW]</p>
+                            <p>Battery 용량 <span>[kW]</span></p>
                             <input type="number" value="100" />
                         </li>
                         <li class="itm toggle_box">
@@ -33,11 +33,11 @@
                     <ul class="list">
                         <li class="sub_titl"><h5>운영 파라미터</h5></li>
                         <li class="itm">
-                            <p>Battery 운영 상한 SOC [%]</p>
+                            <p>Battery 운영 상한 SOC <span>[%]</span></p>
                             <input type="number" value="90" />
                         </li>
                         <li class="itm">
-                            <p>Battery 운영 상한 SOC [%]</p>
+                            <p>Battery 운영 상한 SOC <span>[%]</span></p>
                             <input type="number" value="20" />
                         </li>
                     </ul>
@@ -83,24 +83,7 @@ export default {
     Bold 700
     Black 900
   */
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap select {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
-    display: block;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .regist {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: none;
-}
+
 #pcs_setup_cnt_setting {
     width: 100%;
 }
@@ -153,6 +136,7 @@ export default {
     margin-left: auto;
     margin-top: auto;
     cursor: pointer;
+    color: #fff;
 }
 #pcs_setup_cnt_setting .pcs_setup_cnt_setting_wrap .cnt_wrap .list li {
     display: flex;
@@ -189,6 +173,11 @@ export default {
 #pcs_setup_cnt_setting .pcs_setup_cnt_setting_wrap .cnt_wrap .list li p {
     color: #222222;
     font-size: 16px;
+    font-weight: 500;
+}
+#pcs_setup_cnt_setting .pcs_setup_cnt_setting_wrap .cnt_wrap .list li p span {
+    color: #222222;
+    font-size: 14px;
     font-weight: 500;
 }
 #pcs_setup_cnt_setting

@@ -293,14 +293,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: 1;
 }
 #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
+    display: block;
 }
 #pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: flex;
-}
-#pcs_cnt_top_wrap .cnt_top .month_wrap > *:not(:last-child) {
     display: none;
 }
+
 #pcs_usage_cnt_day_wrap {
     display: flex;
     flex-wrap: wrap;

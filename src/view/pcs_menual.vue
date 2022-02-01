@@ -237,6 +237,7 @@ export default {
     Bold 700
     Black 900
   */
+/* #pcs_menual */
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -249,6 +250,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
+
 #pcs_menual {
     background-color: #f4f7fc;
 }
@@ -264,18 +266,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #pcs_menual #cnbSet .cnb_wrap .depth_3_wrap:nth-child(4) {
     display: flex;
 }
+#pcs_menual #pcs_cnt_top_wrap .cnt_top .month_wrap {
+    display: none;
+}
 #pcs_menual_cnt .pcs_menual_cnt_wrap {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.pcs_menual_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_menual_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.pcs_menual_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
+#pcs_cnt_top_wrap .cnt_wrap .btn {
     display: none;
 }
 #pcs_menual_cnt .pcs_menual_cnt_wrap {

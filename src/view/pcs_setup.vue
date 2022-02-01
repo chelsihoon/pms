@@ -8,8 +8,8 @@
             <section class="pcs_setup_cnt_wrap">
                 <pcsCntTop></pcsCntTop>
                 <pcsSetupCntSetting></pcsSetupCntSetting>
-                <!-- <pcsSetupCntDefault></pcsSetupCntDefault> -->
-                <!-- <pcssetupCntSchedule></pcssetupCntSchedule> -->
+                <pcsSetupCntDefault></pcsSetupCntDefault>
+                <pcssetupCntSchedule></pcssetupCntSchedule>
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -53,6 +53,7 @@ export default {
     Bold 700
     Black 900
   */
+/* pcs_setup */
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -65,6 +66,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
+
 #pcs_setup {
     background-color: #f4f7fc;
 }
@@ -85,16 +87,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
+#pcs_setup #pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: none;
 }
 </style>

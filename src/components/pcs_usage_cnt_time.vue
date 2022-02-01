@@ -254,11 +254,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: 1;
 }
 
+.pcs_usage_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_time {
+    display: flex;
+}
 #pcs_usage_cnt_time_wrap {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* padding: 24px 32px; */
 }
 #pcs_usage_cnt_time_wrap .cnt_wrap {
     background-color: #fff;

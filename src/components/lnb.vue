@@ -31,21 +31,31 @@
                 >
             </nav>
             <nav class="lnb depth_2 list_rack_module">
-                <a href=""
+                <a href="/rack-situation"
                     ><h3 class="depth_2_titl selected_2">Rack 현황</h3></a
                 >
-                <a href=""><h3 class="depth_2_titl">Rack, Module 설정</h3></a>
+                <a href="/rack-setup"
+                    ><h3 class="depth_2_titl">Rack, Module 설정</h3></a
+                >
             </nav>
             <nav class="lnb depth_2 list_system">
-                <a href=""
+                <a href="/system-menual"
                     ><h3 class="depth_2_titl selected_2">
                         기타 기기 수동 제어
                     </h3></a
                 >
-                <a href=""><h3 class="depth_2_titl">데이터 다운로드</h3></a>
-                <a href=""><h3 class="depth_2_titl">기타 기기 설정</h3></a>
-                <a href=""><h3 class="depth_2_titl">관리자 관리</h3></a>
-                <a href=""><h3 class="depth_2_titl">코드 관리</h3></a>
+                <a href="/system-download"
+                    ><h3 class="depth_2_titl">데이터 다운로드</h3></a
+                >
+                <a href="/system-setup"
+                    ><h3 class="depth_2_titl">기타 기기 설정</h3></a
+                >
+                <a href="/system-administrator"
+                    ><h3 class="depth_2_titl">관리자 관리</h3></a
+                >
+                <a href="/system-code"
+                    ><h3 class="depth_2_titl">코드 관리</h3></a
+                >
             </nav>
         </div>
     </section>

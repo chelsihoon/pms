@@ -153,15 +153,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.battery_menual_cnt_wrap #battery_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.battery_menual_cnt_wrap #battery_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.battery_menual_cnt_wrap #battery_cnt_top_wrap .cnt_top .month_wrap {
-    display: none;
-}
+
 #battery_menual_cnt .battery_menual_cnt_wrap {
     display: flex;
 }

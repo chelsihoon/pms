@@ -8,7 +8,7 @@
             <section class="pcs_history_cnt_wrap">
                 <pcsCntTop></pcsCntTop>
                 <pcsHistoryCntOperation></pcsHistoryCntOperation>
-                <!-- <pcsHistoryCntTrouble></pcsHistoryCntTrouble> -->
+                <pcsHistoryCntTrouble></pcsHistoryCntTrouble>
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -50,6 +50,7 @@ export default {
     Bold 700
     Black 900
   */
+/* pcs_history */
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -62,6 +63,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
+
 #pcs_history {
     background-color: #f4f7fc;
 }
@@ -82,13 +84,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: block;
-}
 .pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: flex;
-}
-.pcs_history_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
 }
 </style>

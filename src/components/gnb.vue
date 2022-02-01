@@ -2,7 +2,7 @@
     <section id="gnbSet">
         <nav id="gnb">
             <h1 class="main_logo">
-                <a href="/login"
+                <a href="/dash-board "
                     ><img src="../assets/img/logo_white.png" alt="퀀텀로고"
                 /></a>
             </h1>
@@ -14,10 +14,14 @@
                 <a href="/battery-situation"
                     ><h2 class="depth_1_titl">Battery</h2></a
                 >
-                <a href=""><h2 class="depth_1_titl">Rack,Module</h2></a>
-                <a href=""><h2 class="depth_1_titl">시스템 관리</h2></a>
+                <a href="/rack-situation"
+                    ><h2 class="depth_1_titl">Rack,Module</h2></a
+                >
+                <a href="/system-menual"
+                    ><h2 class="depth_1_titl">시스템 관리</h2></a
+                >
             </div>
-            <a href="" class="logout">
+            <a href="/login" class="logout">
                 <img src="../assets/img/ico_logout.png" alt="로그아웃" />
                 <p>로그아웃</p>
             </a>

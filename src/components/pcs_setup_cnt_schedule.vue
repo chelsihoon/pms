@@ -251,7 +251,6 @@
                             name=""
                             value="01:01:01"
                             class="start_time"
-                            ng-model="endTime"
                         />
                         <div class="wave">~</div>
                         <input
@@ -365,24 +364,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap select {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .regist {
-    display: block;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: none;
-}
+
 #pcs_setup_cnt_schedule {
     display: flex;
     flex-wrap: wrap;
@@ -474,6 +456,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 1px solid #0f3884;
     border-radius: 4px;
     cursor: pointer;
+    color: #fff;
 }
 #pcs_setup_cnt_schedule
     .cnt_center
@@ -584,6 +567,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #2a58ae;
 }
 #pcs_setup_cnt_schedule .light_box {
+    z-index: 999;
     position: fixed;
     width: 100%;
     height: 100%;

@@ -122,18 +122,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
     padding: 24px 32px;
 }
-.battery_setup_cnt_wrap #battery_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.battery_setup_cnt_wrap #battery_cnt_top_wrap .cnt_wrap .add {
-    display: none;
-}
-.battery_setup_cnt_wrap #battery_cnt_top_wrap .cnt_top .cnt_date {
-    display: none;
-}
-.battery_setup_cnt_wrap #battery_cnt_top_wrap .cnt_top .month_wrap {
-    display: none;
-}
+
 #battery_setup_cnt .battery_setup_cnt_wrap .cnt_left {
     padding: 24px;
     background-color: #fff;
@@ -175,6 +164,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-left: auto;
     margin-top: auto;
     cursor: pointer;
+    color: #fff;
 }
 #battery_setup_cnt .battery_setup_cnt_wrap .cnt_wrap .list li {
     display: flex;

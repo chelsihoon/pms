@@ -375,6 +375,7 @@ export default {
     Bold 700
     Black 900
   */
+/* pcs_situation */
 #pcs_situation {
     background-color: #f4f7fc;
 }
@@ -389,6 +390,13 @@ export default {
 /* cnb 번호 지정 */
 #pcs_situation #cnbSet .cnb_wrap .depth_3_wrap:nth-child(1) {
     display: flex;
+}
+#pcs_situation #pcs_cnt_top_wrap .cnt_wrap .btn {
+    display: none;
+}
+
+#pcs_cnt_top_wrap .cnt_top .cnt_date {
+    display: none;
 }
 #pcs_situation_cnt .pcs_situation_cnt_wrap {
     display: flex;

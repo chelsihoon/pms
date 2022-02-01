@@ -86,7 +86,6 @@ option,
 select {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
-    color: #fff;
     font-weight: 400;
 }
 /* 
@@ -158,6 +157,7 @@ body {
 }
 .area_left .wrap_cnt .main_cnt label {
     line-height: 32px;
+    color: #fff;
 }
 .area_left .wrap_cnt .main_cnt input {
     height: 48px;
@@ -175,10 +175,12 @@ body {
     border: 2px solid #171a24;
     border-radius: 4px;
     font-weight: 700;
+    color: #fff;
 }
 .area_left .copy {
     font-size: 12px;
     opacity: 0.5;
+    color: #fff;
 }
 .area_right {
     width: 73%;

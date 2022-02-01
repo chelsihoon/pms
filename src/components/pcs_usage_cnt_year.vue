@@ -137,7 +137,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap {
+#pcs_cnt_top_wrap .cnt_top .month_wrap input {
+    display: block;
+}
+#pcs_cnt_top_wrap .cnt_top .month_wrap .month_wave {
     display: flex;
 }
 #pcs_usage_cnt_year_wrap {

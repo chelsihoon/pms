@@ -21,18 +21,7 @@ export default {
     Bold 700
     Black 900
   */
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap select {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .add {
-    display: none;
-}
-.pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .regist {
-    display: none;
-}
+
 .pcs_setup_cnt_wrap #pcs_cnt_top_wrap .cnt_top .cnt_date {
     display: none;
 }

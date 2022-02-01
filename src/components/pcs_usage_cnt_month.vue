@@ -180,11 +180,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #pcs_cnt_top_wrap .cnt_top .cnt_date {
     display: none;
 }
-#pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: flex;
-}
-#pcs_cnt_top_wrap .cnt_top .month_wrap > *:not(:last-child) {
-    display: none;
+#pcs_cnt_top_wrap .cnt_top .month_wrap > *:first-child {
+    display: block;
 }
 #pcs_usage_cnt_month_wrap {
     display: flex;

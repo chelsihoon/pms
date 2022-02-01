@@ -292,7 +292,6 @@ export default {
     components: { mainHeader, gnbSet, mainFooter },
 };
 </script>
-
 <style>
 /* 
     font weight
@@ -307,6 +306,9 @@ export default {
 #dash_board {
     background-color: #f4f7fc;
     display: block;
+}
+#dash_board * {
+    color: #fff;
 }
 #dash_board_cnt {
     display: flex;

@@ -10,6 +10,8 @@ import batterySituation from "./view/battery_situation.vue";
 import batteryHistory from "./view/battery_history.vue";
 import batteryMenual from "./view/battery_menual.vue";
 import batterySetup from "./view/battery_setup.vue";
+import rackSituation from "./view/rack_situation.vue";
+import rackSetup from "./view/rack_setup.vue";
 
 const routes = {
     "/login": login,
@@ -23,6 +25,8 @@ const routes = {
     "/battery-history": batteryHistory,
     "/battery-menual": batteryMenual,
     "/battery-setup": batterySetup,
+    "/rack-situation": rackSituation,
+    "/rack-setup": rackSetup,
 };
 
 const SimpleRouter = {

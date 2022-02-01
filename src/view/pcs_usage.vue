@@ -8,9 +8,9 @@
             <section class="pcs_usage_cnt_wrap">
                 <pcsCntTop> </pcsCntTop>
                 <pcsUsageCntTime></pcsUsageCntTime>
-                <!-- <pcsUsageCntDay></pcsUsageCntDay> -->
-                <!-- <pcsUsageCntMonth></pcsUsageCntMonth> -->
-                <!-- <pcsUsageCntYear></pcsUsageCntYear> -->
+                <pcsUsageCntDay></pcsUsageCntDay>
+                <pcsUsageCntMonth></pcsUsageCntMonth>
+                <pcsUsageCntYear></pcsUsageCntYear>
                 <!-- 필요한거만 주석 처리 해제 해서 사용하기 -->
             </section>
         </section>
@@ -25,10 +25,10 @@ import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
 import pcsCntTop from "../components/pcs_cnt_top.vue";
-import pcsUsageCntTime from "../components/pcs_usage_cnt_time.vue";
+// import pcsUsageCntTime from "../components/pcs_usage_cnt_time.vue";
 // import pcsUsageCntDay from "../components/pcs_usage_cnt_day.vue";
 // import pcsUsageCntMonth from "../components/pcs_usage_cnt_month.vue";
-// import pcsUsageCntYear from "../components/pcs_usage_cnt_year.vue";
+import pcsUsageCntYear from "../components/pcs_usage_cnt_year.vue";
 
 export default {
     name: "pcsUsage",
@@ -39,10 +39,10 @@ export default {
         cnbSet,
         lnbSet,
         pcsCntTop,
-        pcsUsageCntTime,
+        // pcsUsageCntTime,
         // pcsUsageCntDay,
         // pcsUsageCntMonth,
-        // pcsUsageCntYear,
+        pcsUsageCntYear,
     },
 };
 </script>
@@ -57,6 +57,7 @@ export default {
     Bold 700
     Black 900
   */
+/* pcs_usage */
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -88,8 +89,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 32px;
-}
-.pcs_usage_cnt_wrap #pcs_cnt_top_wrap .cnt_wrap .search {
-    display: block;
 }
 </style>

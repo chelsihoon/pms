@@ -9,6 +9,7 @@
                 <option value="">새 PCS #4</option>
             </select>
             <input type="date" name="" value="2020-08-15" class="cnt_date" />
+            <input type="time" name="" value="" class="cnt_time" />
             <div class="month_wrap">
                 <input type="month" name="" value="2015-08" class="cnt_month" />
                 <div class="month_wave">~</div>
@@ -51,6 +52,19 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     background: transparent;
     position: absolute;
     left: -12px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+input[type="time"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    position: absolute;
+    left: 2px;
     width: 20px;
     height: 20px;
     z-index: 1;
@@ -107,11 +121,11 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     background: transparent;
     position: relative;
     margin-right: 8px;
+    display: none;
     font-size: 14px;
 }
 #pcs_cnt_top_wrap .cnt_top .month_wrap {
     display: flex;
-    display: none;
 }
 #pcs_cnt_top_wrap .cnt_top .month_wrap .cnt_month:first-child {
     margin: 0px;
@@ -123,6 +137,7 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
     display: flex;
     align-items: center;
+    display: none;
 }
 #pcs_cnt_top_wrap .cnt_top .month_wrap input::after {
     position: absolute;
@@ -143,5 +158,45 @@ input[type="month"]::-webkit-calendar-picker-indicator {
     margin-left: auto;
     cursor: pointer;
     display: none;
+}
+#pcs_cnt_top_wrap .cnt_top input[type="time"] {
+    width: 240px;
+    height: 48px;
+    padding: 14px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    color: #444444;
+    font-size: 14px;
+    padding-left: 40px;
+    position: relative;
+}
+#pcs_cnt_top_wrap .cnt_top input[type="date"]::after {
+    position: absolute;
+    left: 16px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/ico_calendar.png) no-repeat;
+}
+#pcs_cnt_top_wrap .cnt_top input[type="time"]::after {
+    position: absolute;
+    left: 16px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(../assets/img/ico_clock.png) no-repeat;
+}
+input[type="time"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    position: absolute;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
 }
 </style>
