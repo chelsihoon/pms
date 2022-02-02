@@ -118,8 +118,8 @@
                     />
                 </div>
             </section>
-            <div class="light_box light_box_1">
-                <div class="inner_box light_box_2">
+            <div class="light_box">
+                <div class="inner_box light_box_1">
                     <h4 class="cnt_titl">Rack 관리</h4>
                     <ul class="list">
                         <li class="itm">
@@ -258,7 +258,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #rack_setup_cnt .rack_setup_cnt_wrap {
     display: flex;
     padding: 24px 32px;
-    margin-bottom: 57px;
 }
 #rack_setup .rack_setup_cnt_wrap .cnt_wrap {
     background-color: #fff;

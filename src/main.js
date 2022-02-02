@@ -12,6 +12,11 @@ import batteryMenual from "./view/battery_menual.vue";
 import batterySetup from "./view/battery_setup.vue";
 import rackSituation from "./view/rack_situation.vue";
 import rackSetup from "./view/rack_setup.vue";
+import systemSetup from "./view/system_setup.vue";
+import systemCode from "./view/system_code.vue";
+import systemMenual from "./view/system_manual.vue";
+import systemDownload from "./view/system_download.vue";
+import systemAdministrator from "./view/system_administrator.vue";
 
 const routes = {
     "/login": login,
@@ -27,6 +32,11 @@ const routes = {
     "/battery-setup": batterySetup,
     "/rack-situation": rackSituation,
     "/rack-setup": rackSetup,
+    "/system-setup": systemSetup,
+    "/system-code": systemCode,
+    "/system-menual": systemMenual,
+    "/system-download": systemDownload,
+    "/system-administrator": systemAdministrator,
 };
 
 const SimpleRouter = {

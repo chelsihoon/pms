@@ -24,6 +24,7 @@ export default {
 #footer {
     position: relative;
     height: 60px;
+    margin-top: 48px;
 }
 #footer .copy {
     position: absolute;

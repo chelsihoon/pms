@@ -6,7 +6,6 @@
         <section id="pcs_menual_cnt">
             <cnbSet></cnbSet>
             <section class="pcs_menual_cnt_wrap">
-                <pcsCntTop></pcsCntTop>
                 <div class="cnt_left">
                     <div class="cnt_left_top cnt_wrap">
                         <h4 class="cnt_titl">PCS 운행상태</h4>
@@ -212,7 +211,6 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsCntTop from "../components/pcs_cnt_top.vue";
 
 export default {
     name: "pcsMenual",
@@ -222,7 +220,6 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsCntTop,
     },
 };
 </script>

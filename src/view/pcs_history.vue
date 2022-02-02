@@ -6,7 +6,6 @@
         <section id="pcs_history_cnt">
             <cnbSet></cnbSet>
             <section class="pcs_history_cnt_wrap">
-                <pcsCntTop></pcsCntTop>
                 <pcsHistoryCntOperation></pcsHistoryCntOperation>
                 <pcsHistoryCntTrouble></pcsHistoryCntTrouble>
             </section>
@@ -21,7 +20,6 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsCntTop from "../components/pcs_cnt_top.vue";
 import pcsHistoryCntOperation from "../components/pcs_history_cnt_operation.vue";
 // import pcsHistoryCntTrouble from "../components/pcs_history_cnt_trouble.vue";
 
@@ -33,7 +31,6 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsCntTop,
         pcsHistoryCntOperation,
         // pcsHistoryCntTrouble,
     },

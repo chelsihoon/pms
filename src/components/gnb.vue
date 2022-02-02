@@ -148,7 +148,6 @@ export default {
 }
 .cnb_wrap .depth_3_wrap {
     position: absolute;
-    margin-left: 32px;
     height: 100%;
     display: flex;
     display: none;

@@ -75,6 +75,7 @@
             </div>
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">코드 관리</h3>
+                <input type="button" name="" id="" value="코드 등록" />
             </div>
         </div>
     </section>
@@ -165,7 +166,7 @@ button {
     display: flex;
 }
 #cnbSet .cnb_wrap .depth_3_wrap {
-    margin-left: 32px;
+    width: 100%;
     height: 100%;
     display: flex;
     display: none;
@@ -181,6 +182,7 @@ button {
     font-size: 28px;
     font-weight: 500;
     color: #313748;
+    margin-left: 32px;
 }
 #cnbSet .list_pcs .depth_3_wrap .depth_2_titl::before {
     content: "";
@@ -225,6 +227,24 @@ button {
     left: 0%;
     margin-right: 15px;
     display: block;
+}
+#cnbSet .list_system > div:last-child {
+    justify-content: space-between;
+    width: 100%;
+}
+#cnbSet .list_system > div:last-child input {
+    width: 136px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #2a58ae;
+    border: 1px solid #0f3884;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 32px;
+    cursor: pointer;
 }
 #cnbSet .cnb_wrap .depth_3_wrap .depth_3 {
     display: flex;

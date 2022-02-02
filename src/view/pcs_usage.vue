@@ -6,7 +6,6 @@
         <section id="pcs_usage_cnt">
             <cnbSet></cnbSet>
             <section class="pcs_usage_cnt_wrap">
-                <pcsCntTop> </pcsCntTop>
                 <pcsUsageCntTime></pcsUsageCntTime>
                 <pcsUsageCntDay></pcsUsageCntDay>
                 <pcsUsageCntMonth></pcsUsageCntMonth>
@@ -24,11 +23,10 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsCntTop from "../components/pcs_cnt_top.vue";
-// import pcsUsageCntTime from "../components/pcs_usage_cnt_time.vue";
+import pcsUsageCntTime from "../components/pcs_usage_cnt_time.vue";
 // import pcsUsageCntDay from "../components/pcs_usage_cnt_day.vue";
 // import pcsUsageCntMonth from "../components/pcs_usage_cnt_month.vue";
-import pcsUsageCntYear from "../components/pcs_usage_cnt_year.vue";
+// import pcsUsageCntYear from "../components/pcs_usage_cnt_year.vue";
 
 export default {
     name: "pcsUsage",
@@ -38,11 +36,10 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsCntTop,
-        // pcsUsageCntTime,
+        pcsUsageCntTime,
         // pcsUsageCntDay,
         // pcsUsageCntMonth,
-        pcsUsageCntYear,
+        // pcsUsageCntYear,
     },
 };
 </script>
