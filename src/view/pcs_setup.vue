@@ -21,9 +21,9 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
+// import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
 // import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
-// import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
+import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
 
 export default {
     name: "pcsSetup",
@@ -33,9 +33,9 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
-        pcsSetupCntSetting,
+        // pcsSetupCntSetting,
         // pcsSetupCntDefault,
-        // pcssetupCntSchedule,
+        pcssetupCntSchedule,
     },
 };
 </script>

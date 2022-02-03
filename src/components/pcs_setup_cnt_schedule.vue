@@ -14,7 +14,11 @@
                     <li class="itm"><p>종료시각</p></li>
                     <li class="itm"><p>수정/삭제</p></li>
                 </ul>
-                <ul class="list">
+                <ul
+                    class="list"
+                    @click="handle_toggle"
+                    :class="{ selected_list: isSelected === 0 }"
+                >
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -29,7 +33,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -44,7 +48,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list selected_list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -59,7 +63,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -74,7 +78,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -89,7 +93,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -104,7 +108,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -119,7 +123,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -134,7 +138,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -149,7 +153,7 @@
                         <input type="button" value="삭제" />
                     </li>
                 </ul>
-                <ul class="list">
+                <ul class="list" @click="handle_toggle">
                     <li class="itm"><p>37526</p></li>
                     <li class="itm"><p>PCS #1</p></li>
                     <li class="itm"><p>충전</p></li>
@@ -196,7 +200,7 @@
                 </li>
             </ul>
         </div>
-        <div class="light_box">
+        <div class="light_box" v-show="modal">
             <ul class="cnt_box_wrap">
                 <li><h4 class="cnt_titl">스케줄 설정</h4></li>
                 <li class="choose">
@@ -325,7 +329,7 @@
                     </label>
                 </li>
                 <li class="set_btn">
-                    <input type="button" value="취소" />
+                    <input type="button" value="취소" @click="handle_toggle" />
                     <input type="button" value="저장" />
                 </li>
             </ul>
@@ -337,6 +341,20 @@
 export default {
     name: "pcssetupCntSchedule",
     components: {},
+    data: () => {
+        return {
+            modal: false,
+            isSelected: 0,
+        };
+    },
+    methods: {
+        handle_toggle: function () {
+            this.modal = !this.modal;
+        },
+        handle_toggle_1: function (index) {
+            this.isSelected = index;
+        },
+    },
 };
 </script>
 
@@ -574,7 +592,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
-    display: none;
+    /* display: none; */
 }
 #pcs_setup_cnt_schedule .light_box .cnt_box_wrap {
     position: absolute;

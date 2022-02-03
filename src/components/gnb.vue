@@ -161,6 +161,8 @@ export default {
     line-height: 40px;
     font-size: 28px;
     font-weight: 500;
+    color: #313748;
+    margin-left: 32px;
 }
 .cnb_wrap .depth_3_wrap .depth_2_titl::before {
     content: "";

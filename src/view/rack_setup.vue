@@ -26,22 +26,46 @@
                     <h5 class="cnt_name">Rack</h5>
                     <div class="cnt_inner">
                         <h6 class="itm_name">Rack #1</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">Rack #2</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">Rack #3</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">Rack #4</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <input
@@ -50,18 +74,31 @@
                         id=""
                         class="add_btn"
                         value="Rack 추가+"
+                        @click="handle_toggle_1"
                     />
                 </div>
                 <div class="pra_wrap cnt_wrap cnt_3">
                     <h5 class="cnt_name">PRA</h5>
                     <div class="cnt_inner">
                         <h6 class="itm_name">PAA01</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_2"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">PAA02</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_2"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <input
@@ -70,43 +107,86 @@
                         id=""
                         class="add_btn"
                         value="PRA 추가+"
+                        @click="handle_toggle_2"
                     />
                 </div>
                 <div class="cmu_wrap cnt_wrap cnt_4">
                     <h5 class="cnt_name">CMU</h5>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #1</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #2</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #3</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #4</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #5</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #6</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <div class="cnt_inner">
                         <h6 class="itm_name">CMU #7</h6>
-                        <input type="button" name="" id="" value="수정" />
+                        <input
+                            type="button"
+                            name=""
+                            id=""
+                            value="수정"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" name="" id="" value="삭제" />
                     </div>
                     <input
@@ -115,10 +195,11 @@
                         id=""
                         class="add_btn"
                         value="CMU 추가+"
+                        @click="handle_toggle_3"
                     />
                 </div>
             </section>
-            <div class="light_box">
+            <div class="light_box modal_1" v-show="modal_1">
                 <div class="inner_box light_box_1">
                     <h4 class="cnt_titl">Rack 관리</h4>
                     <ul class="list">
@@ -132,10 +213,16 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
+            </div>
+            <div class="light_box modal_2" v-show="modal_2">
                 <div class="inner_box light_box_2">
                     <h4 class="cnt_titl">PRA 관리</h4>
                     <ul class="list">
@@ -157,10 +244,16 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_2"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
+            </div>
+            <div class="light_box modal_3" v-show="modal_3">
                 <div class="inner_box light_box_3">
                     <h4 class="cnt_titl">CMU 관리</h4>
                     <ul class="list">
@@ -189,7 +282,11 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
@@ -214,6 +311,24 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
+    },
+    data() {
+        return {
+            modal_1: false,
+            modal_2: false,
+            modal_3: false,
+        };
+    },
+    methods: {
+        handle_toggle_1: function () {
+            this.modal_1 = !this.modal_1;
+        },
+        handle_toggle_2: function () {
+            this.modal_2 = !this.modal_2;
+        },
+        handle_toggle_3: function () {
+            this.modal_3 = !this.modal_3;
+        },
     },
 };
 </script>
@@ -410,7 +525,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none;
 }
 #rack_setup .light_box .inner_box {
     position: absolute;

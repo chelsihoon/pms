@@ -13,51 +13,121 @@
                             <div class="cnt_inner_left">
                                 <h5 class="paa_no">PAA01</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
-                                    <li class="itm">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                             <div class="cnt_inner_right">
                                 <h5 class="paa_no">PAA02</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
                                     <li class="itm selected">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -68,51 +138,123 @@
                             <div class="cnt_inner_left">
                                 <h5 class="paa_no">PAA01</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
-                                    <li class="itm">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                             <div class="cnt_inner_right">
                                 <h5 class="paa_no">PAA02</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
-                                    <li class="itm">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -123,51 +265,123 @@
                             <div class="cnt_inner_left">
                                 <h5 class="paa_no">PAA01</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
-                                    <li class="itm">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                             <div class="cnt_inner_right">
                                 <h5 class="paa_no">PAA02</h5>
                                 <ul class="itm_left itm_wrap">
-                                    <li class="itm">CMU #1</li>
-                                    <li class="itm">CMU #2</li>
-                                    <li class="itm">CMU #3</li>
-                                    <li class="itm">CMU #4</li>
-                                    <li class="itm">CMU #5</li>
-                                    <li class="itm">CMU #6</li>
-                                    <li class="itm">CMU #7</li>
-                                    <li class="itm">CMU #8</li>
-                                    <li class="itm">CMU #9</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #1
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #2
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #3
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #4
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #5
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #6
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #7
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #8
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #9
+                                    </li>
                                 </ul>
                                 <ul class="itm_right itm_wrap">
-                                    <li class="itm">CMU #10</li>
-                                    <li class="itm">CMU #11</li>
-                                    <li class="itm">CMU #12</li>
-                                    <li class="itm">CMU #</li>
-                                    <li class="itm">CMU #14</li>
-                                    <li class="itm">CMU #15</li>
-                                    <li class="itm">CMU #16</li>
-                                    <li class="itm">CMU #17</li>
-                                    <li class="itm">CMU #18</li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #10
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #11
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #12
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #14
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #15
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #16
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #17
+                                    </li>
+                                    <li class="itm" @click="handle_toggle">
+                                        CMU #18
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -261,7 +475,7 @@
                     </ul>
                 </div>
             </section>
-            <div class="light_box">
+            <div class="light_box" v-show="modal">
                 <div class="inner_box">
                     <h3 class="cnt_titl">Module 정보</h3>
                     <div class="select_bar">
@@ -485,7 +699,12 @@
                             <li class="paa_itm">25</li>
                         </ul>
                     </div>
-                    <input class="btn" type="button" value="닫기" />
+                    <input
+                        class="btn"
+                        type="button"
+                        value="닫기"
+                        @click="handle_toggle"
+                    />
                 </div>
             </div>
         </section>
@@ -508,6 +727,16 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
+    },
+    data() {
+        return {
+            modal: false,
+        };
+    },
+    methods: {
+        handle_toggle: function () {
+            this.modal = !this.modal;
+        },
     },
 };
 </script>
@@ -647,6 +876,7 @@ select:focus {
     align-items: center;
     margin-top: 4px;
     color: #222222;
+    cursor: pointer;
 }
 #rack_situation
     .rack_situation_cnt_wrap
@@ -762,7 +992,6 @@ select:focus {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none;
 }
 #rack_situation .light_box .inner_box {
     position: absolute;
@@ -884,5 +1113,6 @@ select:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 </style>

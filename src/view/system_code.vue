@@ -4,11 +4,26 @@
         <gnbSet></gnbSet>
         <lnbSet></lnbSet>
         <section id="system_code_cnt">
-            <cnbSet></cnbSet>
+            <div class="cnb_wrap wrap list_system">
+                <div class="depth_3_wrap">
+                    <h3 class="depth_2_titl">코드 관리</h3>
+                    <input
+                        type="button"
+                        name=""
+                        id=""
+                        value="코드 등록"
+                        @click="handle_toggle_1"
+                    />
+                </div>
+            </div>
             <section class="system_code_cnt_wrap">
                 <div class="cnt_top cnt_wrap">
-                    <button class="btn">코드 카테고리 등록</button>
-                    <button class="btn">코드 카테고리 수정</button>
+                    <button class="btn" @click="handle_toggle_3">
+                        코드 카테고리 등록
+                    </button>
+                    <button class="btn" @click="handle_toggle_4">
+                        코드 카테고리 수정
+                    </button>
                 </div>
                 <div class="cnt_table cnt_wrap">
                     <ul class="itm_titl_list list">
@@ -26,7 +41,11 @@
                         <li class="itm">1</li>
                         <li class="itm">사용 중</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
@@ -37,7 +56,11 @@
                         <li class="itm">2</li>
                         <li class="itm">사용 중</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
@@ -58,7 +81,7 @@
                     </ul>
                 </div>
             </section>
-            <div class="light_box">
+            <div class="light_box" v-show="modal_1">
                 <div class="inner_box light_box_1">
                     <h4 class="cnt_titl">코드 등록</h4>
                     <ul class="list">
@@ -89,10 +112,16 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_1"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
+            </div>
+            <div class="light_box" v-show="modal_2">
                 <div class="inner_box light_box_2">
                     <h4 class="cnt_titl">코드 수정</h4>
                     <ul class="list">
@@ -123,10 +152,16 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_2"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
+            </div>
+            <div class="light_box" v-show="modal_3">
                 <div class="inner_box light_box_3">
                     <h4 class="cnt_titl">코드 카테고리 등록</h4>
                     <ul class="list">
@@ -149,10 +184,16 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_3"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
+            </div>
+            <div class="light_box" v-show="modal_4">
                 <div class="inner_box light_box_4">
                     <h4 class="cnt_titl">코드 카테고리 수정</h4>
                     <ul class="list">
@@ -175,7 +216,11 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_4"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
@@ -189,7 +234,6 @@
 import mainHeader from "../components/main_header.vue";
 import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
-import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
 
 export default {
@@ -198,8 +242,29 @@ export default {
         mainHeader,
         gnbSet,
         mainFooter,
-        cnbSet,
         lnbSet,
+    },
+    data() {
+        return {
+            modal_1: false,
+            modal_2: false,
+            modal_3: false,
+            modal_4: false,
+        };
+    },
+    methods: {
+        handle_toggle_1: function () {
+            this.modal_1 = !this.modal_1;
+        },
+        handle_toggle_2: function () {
+            this.modal_2 = !this.modal_2;
+        },
+        handle_toggle_3: function () {
+            this.modal_3 = !this.modal_3;
+        },
+        handle_toggle_4: function () {
+            this.modal_4 = !this.modal_4;
+        },
     },
 };
 </script>
@@ -235,14 +300,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #system_code #lnbSet .lnb_wrap .depth_2:nth-child(4) {
     display: flex;
 }
-/* cnb : lnb title 번호 지정 1 ~ 4 */
-#system_code #cnbSet .cnb_wrap:nth-child(4) {
-    display: flex;
-}
-/* cnb 번호 지정 */
-#system_code #cnbSet .cnb_wrap .depth_3_wrap:nth-child(5) {
-    display: flex;
-}
+
 #system_code #system_cnt_top_wrap .cnt_top .month_wrap {
     display: none;
 }
@@ -251,7 +309,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 24px 32px;
     flex-direction: column;
 }
-
+#system_code .list_system .depth_3_wrap .depth_2_titl::before {
+    content: "";
+    background: url(../assets/img/icon_setup.png) no-repeat center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 15px;
+    display: block;
+}
+#system_code .list_system > div:last-child {
+    justify-content: space-between;
+    width: 100%;
+}
+#system_code .list_system > div:last-child input {
+    width: 136px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #2a58ae;
+    border: 1px solid #0f3884;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 32px;
+    cursor: pointer;
+}
 #system_code .system_code_cnt_wrap .cnt_table {
     margin-bottom: 0px;
     width: 100%;
@@ -456,7 +542,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none;
 }
 #system_code .light_box .inner_box {
     position: absolute;

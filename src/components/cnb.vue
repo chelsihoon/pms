@@ -75,7 +75,13 @@
             </div>
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">코드 관리</h3>
-                <input type="button" name="" id="" value="코드 등록" />
+                <input
+                    type="button"
+                    name=""
+                    id=""
+                    value="코드 등록"
+                    @click="handle_toggle_1"
+                />
             </div>
         </div>
     </section>
@@ -85,6 +91,16 @@
 export default {
     name: "cnbSet",
     components: {},
+    data() {
+        return {
+            modal_1: false,
+        };
+    },
+    methods: {
+        handle_toggle_1: function () {
+            this.modal_1 = !this.modal_1;
+        },
+    },
 };
 </script>
 

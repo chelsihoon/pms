@@ -7,7 +7,9 @@
             <cnbSet></cnbSet>
             <section class="system_setup_cnt_wrap">
                 <div class="cnt_top cnt_wrap">
-                    <button class="search btn">조회</button>
+                    <button class="search btn" @click="handle_toggle_1">
+                        등록
+                    </button>
                 </div>
                 <div class="cnt_table cnt_wrap">
                     <ul class="itm_titl_list list">
@@ -25,40 +27,56 @@
                         <li class="itm">1</li>
                         <li class="itm">수동제어 가능</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
                     <ul class="list selected_list">
                         <li class="itm">냉방기</li>
-                        <li class="itm">냉방기 1</li>
+                        <li class="itm">냉방기 2</li>
                         <li class="itm">BMS 룸</li>
                         <li class="itm">2</li>
                         <li class="itm">수동제어 가능</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
                     <ul class="list">
                         <li class="itm">냉방기</li>
-                        <li class="itm">냉방기 1</li>
+                        <li class="itm">냉방기 3</li>
                         <li class="itm">BMS 룸</li>
                         <li class="itm">1</li>
                         <li class="itm">수동제어 가능</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
                     <ul class="list">
                         <li class="itm">냉방기</li>
-                        <li class="itm">냉방기 1</li>
+                        <li class="itm">냉방기 4</li>
                         <li class="itm">BMS 룸</li>
                         <li class="itm">1</li>
                         <li class="itm">수동제어 가능</li>
                         <li class="itm">
-                            <input type="button" value="수정" />
+                            <input
+                                type="button"
+                                value="수정"
+                                @click="handle_toggle_2"
+                            />
                             <input type="button" value="삭제" />
                         </li>
                     </ul>
@@ -79,7 +97,7 @@
                     </ul>
                 </div>
             </section>
-            <div class="light_box">
+            <div class="light_box modal_1" v-show="modal_1">
                 <div class="inner_box light_box_1">
                     <h4 class="cnt_titl">기기 등록</h4>
                     <ul class="list">
@@ -112,7 +130,53 @@
                         </li>
                     </ul>
                     <div class="btn">
-                        <input type="button" value="취소" />
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_1"
+                        />
+                        <input type="button" value="저장" />
+                    </div>
+                </div>
+            </div>
+            <div class="light_box modal_2" v-show="modal_2">
+                <div class="inner_box light_box_2">
+                    <h4 class="cnt_titl">기기 수정</h4>
+                    <ul class="list">
+                        <li class="itm">
+                            <h5>기기종류</h5>
+                            <select name="" id="" class="rack_select">
+                                <option value="">
+                                    기기 종류를 선택하세요.
+                                </option>
+                                <option value="">냉방기</option>
+                                <option value="">화재경보기</option>
+                            </select>
+                        </li>
+                        <li class="itm">
+                            <h5>기기명</h5>
+                            <input type="text" value="" />
+                        </li>
+                        <li class="itm">
+                            <h5>Channel</h5>
+                            <input type="text" value="" />
+                        </li>
+                        <li class="itm toggle_box">
+                            <h5>사용 여부</h5>
+                            <div>
+                                <input type="checkbox" id="toggle_box" />
+                                <label for="toggle_box">
+                                    <span class="toggle_btn"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <input
+                            type="button"
+                            value="취소"
+                            @click="handle_toggle_2"
+                        />
                         <input type="button" value="저장" />
                     </div>
                 </div>
@@ -137,6 +201,20 @@ export default {
         mainFooter,
         cnbSet,
         lnbSet,
+    },
+    data() {
+        return {
+            modal_1: false,
+            modal_2: false,
+        };
+    },
+    methods: {
+        handle_toggle_1: function () {
+            this.modal_1 = !this.modal_1;
+        },
+        handle_toggle_2: function () {
+            this.modal_2 = !this.modal_2;
+        },
     },
 };
 </script>
@@ -393,7 +471,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    display: none;
 }
 #system_setup .light_box .inner_box {
     position: absolute;
