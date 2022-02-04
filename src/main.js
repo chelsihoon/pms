@@ -2,10 +2,16 @@ import { createApp, h } from "vue";
 import login from "./view/login.vue";
 import dashBoard from "./view/dash_board.vue";
 import pcsSituation from "./view/pcs_situation.vue";
-import pcsUsage from "./view/pcs_usage.vue";
-import pcsHistory from "./view/pcs_history.vue";
+import pcsUsageYear from "./view/pcs_usage_year.vue";
+import pcsUsageTime from "./view/pcs_usage_time.vue";
+import pcsUsageMonth from "./view/pcs_usage_month.vue";
+import pcsUsageDay from "./view/pcs_usage_day.vue";
+import pcsHistoryOperation from "./view/pcs_history_operation.vue";
+import pcsHistoryTrouble from "./view/pcs_history_trouble.vue";
 import pcsMenual from "./view/pcs_menual.vue";
-import pcsSetup from "./view/pcs_setup.vue";
+import pcsSetupSetting from "./view/pcs_setup_setting.vue";
+import pcsSetupDefault from "./view/pcs_setup_default.vue";
+import pcsSetupSchedule from "./view/pcs_setup_schedule.vue";
 import batterySituation from "./view/battery_situation.vue";
 import batteryHistory from "./view/battery_history.vue";
 import batteryMenual from "./view/battery_menual.vue";
@@ -22,10 +28,16 @@ const routes = {
     "/login": login,
     "/dash-board": dashBoard,
     "/pcs-situation": pcsSituation,
-    "/pcs-usage": pcsUsage,
-    "/pcs-history": pcsHistory,
+    "/pcs-usage/year": pcsUsageYear,
+    "/pcs-usage/time": pcsUsageTime,
+    "/pcs-usage/month": pcsUsageMonth,
+    "/pcs-usage/day": pcsUsageDay,
+    "/pcs-history/operation": pcsHistoryOperation,
+    "/pcs-history/trouble": pcsHistoryTrouble,
     "/pcs-menual": pcsMenual,
-    "/pcs-setup": pcsSetup,
+    "/pcs-setup/setting": pcsSetupSetting,
+    "/pcs-setup/default": pcsSetupDefault,
+    "/pcs-setup/schedule": pcsSetupSchedule,
     "/battery-situation": batterySituation,
     "/battery-history": batteryHistory,
     "/battery-menual": batteryMenual,

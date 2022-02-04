@@ -1,14 +1,12 @@
 <template>
-    <section id="pcs_setup">
+    <section id="pcs_usage">
         <mainHeader></mainHeader>
         <gnbSet></gnbSet>
         <lnbSet></lnbSet>
-        <section id="pcs_setup_cnt">
+        <section id="pcs_usage_cnt">
             <cnbSet></cnbSet>
-            <section class="pcs_setup_cnt_wrap">
-                <!-- <pcsSetupCntSetting></pcsSetupCntSetting>
-                <pcsSetupCntDefault></pcsSetupCntDefault> -->
-                <pcssetupCntSchedule></pcssetupCntSchedule>
+            <section class="pcs_usage_cnt_wrap">
+                <pcsUsageCntYear></pcsUsageCntYear>
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -21,21 +19,17 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-// import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
-// import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
-import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
+import pcsUsageCntYear from "../components/pcs_usage_cnt_year.vue";
 
 export default {
-    name: "pcsSetup",
+    name: "pcsUsageYear",
     components: {
         mainHeader,
         gnbSet,
         mainFooter,
         cnbSet,
         lnbSet,
-        // pcsSetupCntSetting,
-        // pcsSetupCntDefault,
-        pcssetupCntSchedule,
+        pcsUsageCntYear,
     },
 };
 </script>
@@ -50,7 +44,7 @@ export default {
     Bold 700
     Black 900
   */
-/* pcs_setup */
+/* pcs_usage */
 input[type="date"]::-webkit-clear-button,
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -63,28 +57,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     z-index: 1;
 }
-
-#pcs_setup {
+#pcs_usage {
     background-color: #f4f7fc;
 }
 /* lnb 번호 지정 1 ~ 4 */
-#pcs_setup #lnbSet .lnb_wrap .depth_2:nth-child(1) {
+#pcs_usage #lnbSet .lnb_wrap .depth_2:nth-child(1) {
     display: flex;
 }
 /* cnb : lnb title 번호 지정 1 ~ 4 */
-#pcs_setup #cnbSet .cnb_wrap:nth-child(1) {
+#pcs_usage #cnbSet .cnb_wrap:nth-child(1) {
     display: flex;
 }
 /* cnb 번호 지정 */
-#pcs_setup #cnbSet .cnb_wrap .depth_3_wrap:nth-child(5) {
+#pcs_usage #cnbSet .cnb_wrap .depth_3_wrap:nth-child(2) {
     display: flex;
 }
-#pcs_setup_cnt .pcs_setup_cnt_wrap {
+#pcs_usage_cnt .pcs_usage_cnt_wrap {
     display: flex;
     flex-wrap: wrap;
     padding: 24px 32px;
-}
-#pcs_setup #pcs_cnt_top_wrap .cnt_top .month_wrap {
-    display: none;
 }
 </style>

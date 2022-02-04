@@ -5,16 +5,18 @@
                 <a href="/pcs-situation"
                     ><h3 class="depth_2_titl selected_2">PCS 현황</h3></a
                 >
-                <a href="/pcs-usage"
+                <a href="/pcs-usage/time"
                     ><h3 class="depth_2_titl">PCS 사용량</h3></a
                 >
-                <a href="/pcs-history"
+                <a href="/pcs-history/operation"
                     ><h3 class="depth_2_titl">PCS 이력</h3></a
                 >
                 <a href="/pcs-menual"
                     ><h3 class="depth_2_titl">PCS 수동제어</h3></a
                 >
-                <a href="/pcs-setup"><h3 class="depth_2_titl">PCS 설정</h3></a>
+                <a href="/pcs-setup/setting"
+                    ><h3 class="depth_2_titl">PCS 설정</h3></a
+                >
             </nav>
             <nav class="lnb depth_2 list_battery">
                 <a href="/battery-situation"
@@ -120,18 +122,7 @@ button {
 .cursor {
     cursor: pointer;
 }
-.selected_2 {
-    color: #2a58ae;
-}
-.selected_3::after {
-    content: "";
-    height: 3px;
-    width: 100%;
-    background: #2a58ae;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-}
+
 .lnb_wrap {
     width: 100%;
     height: 100%;
@@ -162,5 +153,8 @@ button {
 .lnb .depth_2_titl {
     font-weight: 700;
     color: #444444;
+}
+.lnb .depth_2_titl.selected_2 {
+    color: #2a58ae;
 }
 </style>

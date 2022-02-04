@@ -6,9 +6,7 @@
         <section id="pcs_setup_cnt">
             <cnbSet></cnbSet>
             <section class="pcs_setup_cnt_wrap">
-                <!-- <pcsSetupCntSetting></pcsSetupCntSetting>
-                <pcsSetupCntDefault></pcsSetupCntDefault> -->
-                <pcssetupCntSchedule></pcssetupCntSchedule>
+                <pcsSetupCntDefault></pcsSetupCntDefault>
             </section>
         </section>
         <mainFooter></mainFooter>
@@ -21,21 +19,17 @@ import gnbSet from "../components/gnb.vue";
 import mainFooter from "../components/main_footer.vue";
 import cnbSet from "../components/cnb.vue";
 import lnbSet from "../components/lnb.vue";
-// import pcsSetupCntSetting from "../components/pcs_setup_cnt_setting.vue";
-// import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
-import pcssetupCntSchedule from "../components/pcs_setup_cnt_schedule.vue";
+import pcsSetupCntDefault from "../components/pcs_setup_cnt_default.vue";
 
 export default {
-    name: "pcsSetup",
+    name: "pcsSetupDefault",
     components: {
         mainHeader,
         gnbSet,
         mainFooter,
         cnbSet,
         lnbSet,
-        // pcsSetupCntSetting,
-        // pcsSetupCntDefault,
-        pcssetupCntSchedule,
+        pcsSetupCntDefault,
     },
 };
 </script>

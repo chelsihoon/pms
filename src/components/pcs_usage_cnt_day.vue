@@ -661,6 +661,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 16px;
     height: 16px;
     background: url(../assets/img/ico_calendar.png) no-repeat;
+    cursor: pointer;
 }
 #pcs_usage_topcnt_day .cnt_wrap .btn {
     width: 136px;
@@ -691,6 +692,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 16px;
     height: 16px;
     background: url(../assets/img/ico_calendar.png) no-repeat;
+    cursor: pointer;
 }
 #pcs_usage_topcnt_day .cnt_top input[type="time"]::after {
     position: absolute;
@@ -699,6 +701,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     width: 16px;
     height: 16px;
     background: url(../assets/img/ico_clock.png) no-repeat;
+    cursor: pointer;
 }
 input[type="time"]::-webkit-clear-button,
 input[type="time"]::-webkit-inner-spin-button {

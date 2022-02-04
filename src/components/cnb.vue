@@ -7,21 +7,29 @@
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 사용량</h3>
                 <nav class="cnb depth_3 list_pcs_used">
-                    <a href="" class="selected_3"
-                        ><h4 class="depth_3_titl selected_2">시간별</h4></a
+                    <a href="/pcs-usage/time" class="selected_cnt"
+                        ><h4 class="depth_3_titl">시간별</h4></a
                     >
-                    <a href=""><h4 class="depth_3_titl">일별</h4></a>
-                    <a href=""><h4 class="depth_3_titl">월별</h4></a>
-                    <a href=""><h4 class="depth_3_titl">연도별</h4></a>
+                    <a href="/pcs-usage/day"
+                        ><h4 class="depth_3_titl">일별</h4></a
+                    >
+                    <a href="/pcs-usage/month"
+                        ><h4 class="depth_3_titl">월별</h4></a
+                    >
+                    <a href="/pcs-usage/year"
+                        ><h4 class="depth_3_titl">연도별</h4></a
+                    >
                 </nav>
             </div>
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 이력</h3>
                 <nav class="cnb depth_3 list_pcs_history">
-                    <a href="" class="selected_3"
-                        ><h4 class="depth_3_titl selected_2">운행이력</h4></a
+                    <a href="/pcs-history/operation" class="selected_cnt"
+                        ><h4 class="depth_3_titl">운행이력</h4></a
                     >
-                    <a href=""><h4 class="depth_3_titl">고장이력</h4></a>
+                    <a href="/pcs-history/trouble"
+                        ><h4 class="depth_3_titl">고장이력</h4></a
+                    >
                 </nav>
             </div>
             <div class="depth_3_wrap">
@@ -30,11 +38,15 @@
             <div class="depth_3_wrap">
                 <h3 class="depth_2_titl">PCS 설정</h3>
                 <nav class="cnb depth_3 list_pcs_setting">
-                    <a href="" class="selected_3"
-                        ><h4 class="depth_3_titl selected_2">PCS 설정</h4></a
+                    <a href="/pcs-setup/setting" class="selected_cnt"
+                        ><h4 class="depth_3_titl">PCS 설정</h4></a
                     >
-                    <a href=""><h4 class="depth_3_titl">자동제어 기준값</h4></a>
-                    <a href=""><h4 class="depth_3_titl">스케줄 설정</h4></a>
+                    <a href="/pcs-setup/default"
+                        ><h4 class="depth_3_titl">자동제어 기준값</h4></a
+                    >
+                    <a href="/pcs-setup/schedule"
+                        ><h4 class="depth_3_titl">스케줄 설정</h4></a
+                    >
                 </nav>
             </div>
         </div>
@@ -158,10 +170,10 @@ button {
 .cursor {
     cursor: pointer;
 }
-.selected_2 {
+.selected_cnt h4 {
     color: #2a58ae !important;
 }
-.selected_3::after {
+.selected_cnt::after {
     content: "" !important;
     height: 3px !important;
     width: 100% !important;
